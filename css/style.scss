@@ -1,0 +1,42 @@
+/// vendor
+@import "vendor/bootstrap.min";
+@import "vendor/jquery-ui.min";
+@import "vendor/select2.min";
+
+// / // Common styles
+@import "common/text";					// Default text size, styles, colors,margins
+@import "common/helpers";				// .clearfix, .hidden, .invisible
+@import "common/layout";				// Other common stuff
+@import "common/buttons";	   			// Button style;
+@import "common/header";				// Page header
+@import "common/footer";				// Page footer
+@import "common/accordion";			    // Accordion in jobs page
+
+// / // Elements
+// / // -- Menu element
+@import "elements/menu/top-menu";		// Top menu
+@import "elements/menu/side-menu";
+@import "elements/breadcrumbs";		    // Breadcrumbs
+@import "elements/switch";				// Tab switch
+@import "elements/table";				// Table styles
+@import "elements/dropdown";			// Custom dropdown styles
+@import "elements/form";				// Form
+@import "elements/datepicker";			// Initial datepicker styles
+@import "elements/datepicker-submit";	// Input form styles
+@import "elements/pagination";			// Pagination
+@import "elements/search/sidebar";		// Search results sidebar
+
+// / // Pages
+@import "pages/404";
+
+// i-bank
+@import "elements/ib-main";
+@import "elements/ib-header";
+@import "elements/ib-sidebar";
+@import "elements/ib-footer";
+@import "elements/ib-table";
+@import "elements/ib-form";
+@import "elements/ib-pages";
+
+@import "common/print"; // Last one here to overwrite previous styles
+@import "elements/ib-print"; // Last one here to overwrite previous styles

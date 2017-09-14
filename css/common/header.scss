@@ -1,0 +1,33 @@
+header {
+	padding-top: 37px;
+	margin-bottom: 40px;
+	
+	img {
+		vertical-align: top;
+	}
+}
+img, .lang {
+	display: inline-block;
+}
+.lang {
+	margin: 0;
+	vertical-align: top;
+	position: absolute;
+	right: 30px;
+	top: 10px;
+	li {
+		display: inline-block;
+		padding: 0 2px;
+		a {
+			font-size: 10px;
+			text-transform: uppercase;
+		}
+		a.active {
+			color: #2093d2;		
+		}
+	}
+}
+
+.print-only {
+	display: none;
+}

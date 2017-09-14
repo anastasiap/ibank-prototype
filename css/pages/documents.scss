@@ -1,0 +1,70 @@
+.documents {
+	margin-bottom: 40px;
+	ul {
+		li {
+			margin-top: 25px;
+			
+			&:first-child {
+				margin-top: 0;
+			}
+
+			&:before {
+				content: ' ';
+				display: inline-block;
+				margin-right: 16px;
+				width: 14px;
+				height: 16px;
+				vertical-align: sub;
+				background-position: 50%;
+				background-repeat: no-repeat;
+			}
+			&.word:before {
+				background-image: url('../assets/img/icons/word.png');
+			}
+			
+			&.pdf:before {
+				background-image: url('../assets/img/icons/pdf.png');
+			}
+
+
+			a {
+				color: #2093d2;
+				font-size: 13px;
+				text-decoration: underline;	
+				display: inline-block;
+				vertical-align: top;
+				max-width: 80%;
+
+				&+span {
+					margin-left: 3px; 
+				}
+			}
+			
+			span {
+				color: #67c9ff;
+				display: inline-block;
+				margin-left: 3px;
+			}
+		}
+	}
+}
+
+.document-groups {
+
+	ul {
+		li {
+			a {
+				&+ul {
+					display: none;
+					margin-left: 15px;	
+				}
+
+				&.active {
+					&+ul {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}

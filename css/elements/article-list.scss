@@ -1,0 +1,42 @@
+.article-list {
+	margin: 65px 0 40px 0;
+
+	>li {
+		margin-bottom: 30px;
+
+		h3 {
+			border: 0;
+			a {
+				color: #2093d2;
+				margin-bottom: 5px;
+			}
+		}
+
+		p {
+			margin-bottom: 5px;
+		}
+
+		span {
+			color: #939393;
+			font-size: 11px;
+			display: block;
+			margin-bottom: 10px;
+		}
+	}
+	.news-item {
+		span {
+			margin-top: -3px;
+		}
+	}
+
+	/**
+	 * Nothing found 
+	 */
+	.search-error,
+	.search-error + div, {
+		font-size: 18px;
+		font-weight: 400;
+		color: #00284a;
+		margin-bottom: 10px;
+	}
+}

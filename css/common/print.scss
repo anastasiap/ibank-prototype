@@ -1,0 +1,270 @@
+ @media print {
+ 	body {
+ 		/**
+ 		 * No need for gradients and patterns
+ 		 */
+ 		background: #fff !important;
+ 	}
+
+ 	/**
+ 	 * Do not show some
+ 	 * useless elements
+ 	 */
+ 	.lang,
+ 	.search-form,
+ 	.footer,
+ 	.news-block,
+ 	.bottom-menu,
+ 	.upper-menu ul,
+ 	.breadcrumbs,
+ 	.switch,
+ 	.with-blue-border.full-width,
+ 	aside,
+ 	.active-from + a {
+ 		display: none !important;
+ 	}
+
+ 	/**
+ 	 * Remove border and
+ 	 * padding from wrapper
+ 	 */
+ 	.wrapper {
+ 		padding: 0;
+ 		border: 0;
+ 	}
+
+ 	/**
+ 	 * Title margin decreased
+ 	 */
+ 	.title {
+ 		margin-bottom: 30px;
+ 	}
+
+
+ 	/**
+ 	 * Show contact info in header
+ 	 */
+ 	header {
+ 		.print-only {
+ 			display: block;
+ 			float: right;
+
+ 			span {
+ 				font-size: 12px;
+ 				color: #414141;
+ 				display: block;
+ 			}
+ 			.mail span {
+ 				display: inline;
+ 			}
+ 		}
+ 	}
+
+ 	/**
+ 	 * Only thin border @ the bottom of top nav
+ 	 */
+ 	.upper-menu {
+ 		border-top: 1px solid #dedede;
+ 		// .box-shadow(none);
+ 	}
+
+ 	.content {
+ 		/**
+ 		 * Landing page only
+ 		 */
+ 		&.landing {
+
+ 			/**
+ 			 * Promo banners
+ 			 */
+ 			.banner {
+ 				height: auto !important;
+ 				float: none;
+ 				// .box-shadow(none);
+ 				display: block;
+
+ 				* {
+ 					height: auto !important;
+ 					width: auto !important;
+ 				}
+
+ 				.text-box {
+ 					position: static;
+
+ 					/**
+ 					 * No need for link
+ 					 */
+ 					.read-more {
+ 						display: none;
+ 					}
+ 				}
+ 			}
+
+ 			.right {
+ 				display: block;
+
+ 				figure:first-child {
+ 					margin-bottom: 0px;
+ 				}
+ 			}
+
+ 			.left {
+ 				margin-bottom: 40px;
+ 			}
+
+ 			.left,
+ 			.right .banner {
+
+ 				.color-stripes,
+ 				.gradient,
+ 				img,
+ 				&:before {
+ 					display: none;
+ 				}
+ 			}
+ 		}
+
+ 		/**
+ 		 * News item
+ 		 */
+ 		.news-title {
+ 			border: none;
+ 			margin-bottom: 0;
+ 		}
+
+ 		/**
+ 		 * Two promo banners in a row
+ 		 */
+ 		.banners {
+ 			margin-left: 0;
+
+ 			.become-a-client {
+ 				margin-bottom: 0;
+ 			}
+
+ 			.inner {
+ 				box-shadow: none;
+ 				width: 100%;
+ 				margin-left: 0;
+ 				margin-bottom: 40px;
+ 				height: auto !important;
+
+ 				&:before,
+ 				.gradient,
+ 				img {
+ 					display: none;
+ 				}
+
+ 				.inner-text {
+ 					position: static;
+ 					margin-left: 0;
+
+ 					p {
+ 						margin-top: 0;
+ 					}
+ 				}
+ 			}
+ 		}
+
+ 		/**
+ 		 * Do not need sidebar at all
+ 		 */
+ 		.left {
+ 			width: 100%;
+ 		}
+ 	}
+
+ 	/**
+ 	 * Currency rates
+ 	 * (hide all apps)
+ 	 */
+ 	.currency-rates {
+ 		.controls,
+ 		.converter {
+ 			display: none;
+ 		}
+ 	}
+
+ 	/**
+ 	 * Documents
+ 	 */
+ 	.documents {
+ 		ul li a:before {
+ 			display: none;
+ 		}
+ 	}
+
+ 	/**
+ 	 * Contacts
+ 	 */
+ 	.main-office {
+
+ 		width: auto;
+ 		height: auto;
+        box-shadow: none;
+
+ 		.company-info {
+ 			padding: 0;
+ 			width: auto;
+ 			height: auto;
+ 			position: static;
+ 		}
+
+ 		// img,
+ 		// .decoration-blue-line,
+ 		// &+.offices li .show-on-map {
+ 		// 	display: none;
+ 		// }
+ 	}
+
+ 	/**
+ 	 * Always open accordions
+ 	 */
+ 	.accordion {
+ 		.inner.text {
+ 			display: block !important;
+ 		}
+ 	}
+
+ 	/**
+ 	 * Service tiles
+ 	 */
+ 	.tiles-wrapper {
+ 		li {
+ 			display: block;
+ 			width: 100% !important;
+ 			padding: 0;
+
+ 			.inner-content {
+ 				height: auto;
+ 				border: none;
+
+ 				&:hover {
+ 					background: #fff;
+ 				}
+
+ 				h2 {
+ 					margin-bottom: 0;
+ 					margin-top: 0;
+ 					line-height: 1.2em;
+ 				}
+
+ 				.icon {
+ 					display: none;
+ 				}
+ 			}
+ 		}
+ 	}
+
+    .card-details {
+      img {
+        display: none;
+      }
+    }
+
+   .btn,
+   .pagination,
+   .glyphicon-question-sign  {
+     display: none;
+   }
+ }

@@ -1,0 +1,54 @@
+@media print {
+
+  .mobile-sidebar,
+  .mobile-sidebar-nav,
+  .date-select,
+  .pagination-settings,
+  .table input[type="checkbox"],
+  .action-wrapper,
+  .scrollup {
+	display: none;
+  }
+
+  .navbar {
+	display: block;
+  }
+
+  main {
+	.col-sm-9 {
+	  width: 100%;
+	}
+  }
+
+  .table-responsive {
+	padding: 0;
+	margin: 0;
+  }
+
+  body {
+	font-size: 1.1em !important;
+  }
+
+  .container {
+	margin: 0;
+	padding: 0;
+  }
+
+  a:link:after, a:visited:after {
+	content:"";
+  }
+
+  .visible-xs {
+	.navbar-form {
+	  display: none;
+	}
+  }
+
+  header {
+	.navbar-form.navbar-right {
+	  .form-control {
+		display: none;
+	  }
+	}
+  }
+}

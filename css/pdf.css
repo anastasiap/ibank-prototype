@@ -1,0 +1,3193 @@
+body, html {
+    height: 100%;
+}
+/*******************
+***** Top menu *****
+********************/
+#header ul {
+    height: 88px;
+    width: 625px;
+    float: left;
+    width: auto;
+}
+
+#header a.logo {
+    text-decoration: none;
+    float: left;
+    display: block;
+}
+
+#header li {
+    float: left;
+    width: 125px;
+    height: 88px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    background: #f8f8f8 url(/images/menu-top-bg.gif) repeat-y 0 0;
+}
+
+#header li.sel {
+    float: left;
+    width: 125px;
+    height: 88px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    background: #f8f8f8 url(/images/menu-top-bg-selected.gif) repeat-y 0 0;
+}
+
+#header li a {
+    color: #01579B;
+    font: normal 12px Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    display: block;
+    margin: 0;
+    padding: 37px 5px 0 5px;
+    height: 51px;
+    /*	background: url(/images/top-menu-blue.gif) no-repeat 100% 0; */
+}
+/* eto klass, 4toby pokazat text vmesto linka */
+.abMenuTabText {
+    color: #01579B;
+    font: normal 12px Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    display: block;
+    margin: 0;
+    padding: 37px 5px 0 5px;
+    height: 51px;
+}
+
+#header li#mid-3 a,#header li#mid-4 a {
+    padding-top: 30px;
+    height: 58px;
+}
+
+#header li a:hover {
+    text-decoration: underline;
+}
+
+#header li.sel a { /*	background: #F4C512 url(/images/top-menu-red.gif) no-repeat 100% 0;	*/
+    color: #fff;
+}
+
+#header li.sel a:hover {
+    text-decoration: none;
+}
+
+/* Kreisaa saana menucis
+-------------------------------------*/
+ul ul,li.sub,li.wc li {
+    margin-left: 10px;
+}
+
+#menu-body a {
+    cursor: pointer;
+}
+
+#menu-body li.sub {
+    margin-left: 0;
+}
+
+#menu-body ul {
+    width: 190px;
+    padding: 0;
+    margin: 0;
+    background: url(/images/left-menu-bg.gif) repeat-x 0 0;
+}
+
+#menu-body li {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    background: url(/images/left-menu-bg.gif) repeat-x;
+}
+
+#menu-body li.selected {
+    background: url(/images/menu-left-bg-selected.gif) repeat-y;
+}
+
+#menu-body li a,#menu-body li span {
+    font: normal 12px Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    width: 157px; /* 180px */
+    min-height: 19px;
+    _height: 19px;
+    display: block;
+    line-height: 19px;
+    color: #4C79A3;
+}
+
+#menu-body li a {
+    padding: 6px 0 6px 23px;
+}
+
+#menu-body li.text span {
+    color: #7A7A7A;
+}
+
+#menu-body li.selected a,#menu-body li.selected span {
+    font: normal 12px Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#menu-body li span.menuLinkItem {
+    padding: 0;
+    line-height: 18px;
+}
+
+#menu-body .second li a,#menu-body .second li.sel a,#menu-body .second li.sel a:hover {
+    
+}
+
+#menu-body li.sel a,#menu-body li.sel span {
+    color: #7A7A7A;
+    font-weight: bold;
+}
+
+#menu-body li.sub,#menu-body li.wc li {
+    background-image: none;
+}
+
+#menu-body li.sub a,#menu-body li.wc li a,#menu-body li.wc li span {
+    background-color: #fff;
+    color: #01579B;
+    background: url(/images/left-menu-sub-x.gif) no-repeat 22px 0;
+    padding: 0 0 0 10px;
+    width: 147px;
+}
+
+#menu-body li.sub a.sel,#menu-body li.wc li.sel a {
+    background: url(/images/left-menu-sub-a.gif) no-repeat 22px 0;
+    padding-left: 33px;
+    width: 147px;
+}
+
+#menu-body li.sel,#menu-body li.text {
+    padding: 6px 0 6px 23px;
+}
+
+#menu-body .second li.sel a,#menu-body .second li.sel a:hover {
+    
+}
+
+#menu-body li.sel a:hover {
+    
+}
+
+#menu-body li a,#menu-body li a:hover {
+    text-decoration: underline;
+}
+
+#menu-body .second li a:hover {
+    
+}
+
+#menu-body li.sub {
+    padding: 2px 2px 2px 7px;
+}
+
+#menu-body li.sub a,#menu-body .second li.sub a {
+    padding-left: 33px;
+}
+
+#menu-body li.sub a.sel,#menu-body li.sub a.sel:hover,#menu-body .second li.sub a:hover {
+    font-weight: bold;
+}
+
+#menu-body .menu-bottom {
+    
+}
+
+#menu-body dl {
+    color: #929191;
+    margin: 0 0.909091em;
+    padding: 1.1818em 0;
+}
+
+#menu-body dl a {
+    color: #929191;
+}
+
+#menu-body dl dt {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#menu-body dl dd {
+    margin: 0 0 1em;
+    font-size: 12px;
+}
+
+/* Videejais menjucis
+-------------------------------------*/
+#content-body #sub-menu ul {
+    position: relative;
+    height: 58px;
+    margin-bottom: 10px;
+}
+
+#content-body #sub-menu li {
+    background-image: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+#content-body #sub-menu ul ul {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    height: 24px !important;
+    padding-top: 0px;
+    width: 715px;
+    margin: 0;
+    background: url(/images/sub-menu-bg.gif) repeat-x;
+    border-top: 2px solid #f1b70e;
+}
+
+#content-body #sub-menu li a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #525552;
+    margin-left: 5px;
+    display: block;
+    float: left;
+}
+
+* html #content-body #sub-menu li a {
+    margin-left: 3px;
+}
+
+#content-body #sub-menu ul li {
+    background: url(/images/sub-menu-top-bg.gif) repeat-x;
+    height: 23px;
+}
+
+#content-body #sub-menu ul li a {
+    padding: 4px 15px 4px 3px;
+    background: url(/images/sub-menu-top-left.gif) no-repeat 100% 0;
+}
+
+#content-body #sub-menu ul li#mid-51 a,#content-body #sub-menu ul li#mid-105 a {
+    background-image: url(/images/sub-menu-top-right.gif);
+}
+
+#content-body #sub-menu ul li.sel {
+    background: url(/images/sub-menu-top-bg-sel.gif) repeat-x;
+}
+
+#content-body #sub-menu ul li.sel a {
+    font-weight: bold;
+    background: url(/images/sub-menu-top-left-sel.gif) no-repeat 100% 0;
+    color: #fff;
+}
+
+#content-body #sub-menu ul li.sel#mid-51 a,#content-body #sub-menu ul li.sel#mid-105 a {
+    background-image: url(/images/sub-menu-top-right-sel.gif);
+}
+
+#content-body #sub-menu ul li.sel#mid-50 a,#content-body #sub-menu ul li.sel#mid-100 a {
+    background-image: url(/images/sub-menu-top-left-sel.gif);
+}
+
+#content-body #sub-menu ul li.sub a {
+    color: #525552;
+    background: none !important;
+    font-weight: normal;
+}
+
+#content-body #sub-menu li.sub {
+    height: 24px;
+    background: none;
+}
+
+#content-body #sub-menu li.sub a {
+    height: 13px;
+    padding: 4px 4px 7px 4px;
+}
+
+#content-body #sub-menu li.sub a.sel {
+    font-weight: bold;
+    background: url(/images/sub-menu-bul.gif) no-repeat 50% 100% !important;
+}
+
+/* Pirmas lapas kreisais
+-------------------------------------*/
+#f-menu {
+    padding-bottom: 7px;
+}
+
+#f-menu ul {
+    background: url(/images/f-menu-bottom-bg.gif) no-repeat 0 100%;
+    padding-bottom: 2px;
+}
+
+#f-menu li {
+    background: url(/images/f-menu-bg.gif) no-repeat 0 0;
+    width: 190px;
+    margin: 0;
+    padding: 0;
+}
+
+#f-menu li a {
+    width: 100%;
+    /*padding: 10px 0;*/
+    padding: 4px 0;
+    margin: 0;
+    text-transform: uppercase;
+    font: bold 12px Arial, Helvetica, sans-serif;
+    color: #487AA9;
+    line-height: 1.5em;
+}
+
+/* Pamata izkaartojums
+-------------------------------------*/
+body {
+    background: #f8f8f8;
+    color: #4b4b4b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%;
+/*    background: #f8f8f8 url(/images/bg-first-top.gif) repeat-x;*/
+}
+
+.with-info {
+    background: #f8f8f8 url(/images/bg-first-top-winfo.gif) repeat-x;
+}
+.without-info {
+    background: #f8f8f8 url(/images/bg-first-top.gif) repeat-x;
+}
+.content {
+    font-size: 12px;
+}
+
+body.first-page {
+    
+}
+
+body.frame {
+    background: none;
+}
+
+/* Saites
+-------------------------------------*/
+a,.sel .sub a,.sel ul a {
+    color: #4C79A3;
+    text-decoration: underline;
+}
+
+.delimiter-link {
+    text-decoration: none;
+    vertical-align:middle;
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: left;
+    padding: 0 0 0 5px;
+    width: 715px;
+    margin-top: 12px;
+    height: 22px;
+}
+
+.jaunumi .block span,.pastajaunumi a.bul,a.bul,.left a span,a.back span {
+    color: #d80000;
+    text-decoration: none;
+}
+
+.jaunumi .block a {
+    color: #4b4b4b;
+    text-decoration: none;
+}
+
+.jaunumi .block span {
+    padding-left: 3px;
+}
+
+.jaunumi .block a:hover {
+    text-decoration: underline;
+}
+
+.e-pakalpojumi a,.pastajaunumi a,a.back {
+    text-decoration: none;
+}
+
+.jaunumi p {
+    color: #4b4b4b;
+    line-height: 1.6em;
+}
+
+#footer a {
+    color: #909090;
+    text-decoration: none;
+}
+
+#search-res a.bul {
+    
+}
+
+.left a span,a.back span {
+    padding-right: 3px;
+    padding-left: 5px;
+}
+
+.rl li a,.news-list a.bul,.news-links a {
+    color: #4b4b4b;
+    padding-left: 13px;
+    background: url(/images/rl-bullet.gif) no-repeat 0 4px;
+    text-decoration: none;
+}
+
+#search-res dt a,.news-list li a,.msgbox-list li a,.form .left a,.cat-item strong a {
+    color: #4b4b4b;
+    text-decoration: none;
+}
+
+#menu-body li a:hover,.rl li a:hover,.msgbox-list li a:hover,#footer .rights a:hover,.cat-item strong a {
+    text-decoration: underline;
+}
+
+.form a {
+    color: #736d63;
+}
+
+.search-nav a,.cat-item strong a:hover {
+    text-decoration: none;
+}
+
+.lang a,.lang span {
+    color: #4b4b4b;
+    text-decoration: none;
+    padding: 2px 4px;
+}
+
+.lang a,.lang strong {
+    color: #225f98;
+}
+
+.lang a.selected {
+    font-weight: bold;
+}
+
+#footer .footer-top a {
+    width: 20px;
+    height: 12px;
+    display: block;
+}
+
+#footer .footer-top a {
+    width: 20px;
+    height: 12px;
+    background-image: url(/images/footer-first-top.gif);
+}
+
+/* Image replace
+-------------------------------------*/
+#f-choice li a,.hotlinks h2,#content-body h1,.rl h2,#footer .footer-top a,.partners a {
+    display: block;
+    text-decoration: none;
+    text-indent: -5000px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    overflow: hidden;
+}
+
+/* Fonti
+-------------------------------------*/
+.e-pakalpojumi h3 {
+    font: bold 1em Arial, Helvetica, sans-serif;
+}
+
+.e-pakalpojumi h3 a {
+    color: #fff;
+}
+
+.form .input,.form .input-small,.form select {
+    font-size: 12px;
+}
+
+.grozs-detailed .poga,#menu-body a.poga-register,#shop-basket {
+    font-size: 12px;
+}
+
+.site-search .submit,#search-full .submit {
+    font: 12px Arial, Helvetica, sans-serif;
+}
+
+.lang {
+    font: normal 0.9em Arial, Helvetica, sans-serif;
+}
+
+#footer p {
+    font: 0.85em Arial, Helvetica, sans-serif;
+}
+
+.persona,.cat-item {
+    
+}
+
+html>body .persona,html>body .cat-item {
+    
+}
+
+.news-list strong,.news-date {
+    
+}
+
+#content-body th,#content-body th.sub {
+    
+}
+
+.default .content p {
+    line-height: 1.7em;
+}
+
+/* Virsraksti
+-------------------------------------*/
+h1,h2,h3 {
+    margin: 0;
+    font-size: 1em;
+}
+
+h1 {
+    margin: 5px 0px;
+    color: #4b4b4b;
+}
+
+h1.news-title {
+    margin-bottom: 0;
+}
+
+#search-res dt strong {
+    display: none;
+}
+
+h1,#menu-body h2,.e-pakalpojumi h3 {
+    background-repeat: no-repeat;
+    display: block;
+    height: 16px;
+}
+
+h1.h1-mekletajs {
+    background-image: url(/images/h1-mekletajs.gif)
+}
+
+h1.h1-aktual {
+    background-image: url(/images/h1-aktualitates.gif)
+}
+
+h1.h1-nodalas {
+    background-image: url(/images/h1-nodalas.gif)
+}
+
+h1.h1-pkastes {
+    background-image: url(/images/h1-pkastes.gif)
+}
+
+h1.h1-kontakti {
+    background-image: url(/images/h1-kontakti.gif)
+}
+
+h1.h1-shop {
+    background-image: url(/images/h1-titles_veikals.gif);
+    height: 21px !important;
+}
+
+h1.h1-grozs {
+    background-image: url(/images/h1-grozs.gif)
+}
+
+h1.h1-kurjerpasts {
+    background-image: url(/images/h1-kurjerpasts.gif)
+}
+
+h1.h1-lapaskarte {
+    background-image: url(/images/h1-lapaskarte.gif)
+}
+
+h1.h1-valde {
+    background-image: url(/images/h1-valde.gif)
+}
+
+h1.h1-padome {
+    background-image: url(/images/h1-padome.gif)
+}
+
+h1.h1-filatelija {
+    background-image: url(/images/h1-titles_filatelija.gif);
+    height: 21px !important;
+}
+
+h1.h1-finpak {
+    background-image: url(/images/h1-titles_finpakalpojumi.gif);
+    height: 21px !important;
+}
+
+h1.h1-citipak {
+    background-image: url(/images/h1-citipak.gif)
+}
+
+h1.h1-pastkartes {
+    background-image: url(/images/h1-pastkartes.gif)
+}
+
+h1.h1-pakas {
+    background-image: url(/images/h1-pakas.gif)
+}
+
+h1.h1-banderoles {
+    background-image: url(/images/h1-banderoles.gif)
+}
+
+h1.h1-mmaisi {
+    background-image: url(/images/h1-mmaisi.gif)
+}
+
+h1.h1-vestules {
+    background-image: url(/images/h1-vestules.gif)
+}
+
+h1.h1-sikpakas {
+    background-image: url(/images/h1-sikpakas.gif)
+}
+
+h1.h1-pastspiedurvim {
+    background-image: url(/images/h1-pastspiedurvim.gif)
+}
+
+h1.h1-presesabonesana {
+    background-image: url(/images/h1-titles_abonesana.gif);
+    height: 21px !important;
+}
+
+h1.h1-abonepluss {
+    background-image: url(/images/h1-abonepluss.gif)
+}
+
+h1.h1-abonentukastites {
+    background-image: url(/images/h1-abonentukastites.gif)
+}
+
+h1.h1-pastakastites {
+    background-image: url(/images/h1-pastakastites.gif)
+}
+
+h1.h1-komerckorespondence {
+    background-image: url(/images/h1-komerckorespondence.gif)
+}
+
+h1.h1-specialieindeksi {
+    background-image: url(/images/h1-specialieindeksi.gif)
+}
+
+h1.h1-jautajumiunatbildes {
+    background-image: url(/images/h1-jautajumiunatbildes.gif)
+}
+
+h1.h1-pastasutijumuadresesana {
+    background-image: url(/images/h1-pastasutijumuadresesana.gif)
+}
+
+h1.h1-darbaiespejas {
+    background-image: url(/images/h1-darbaiespejas.gif)
+}
+
+h1.h1-paruznemumu {
+    background-image: url(/images/h1-paruznemumu.gif)
+}
+
+h1.h1-misijaunvizija {
+    background-image: url(/images/h1-misijaunvizija.gif)
+}
+
+h1.h1-parskati {
+    background-image: url(/images/h1-parskati.gif)
+}
+
+h1.h1-likumdosana {
+    background-image: url(/images/h1-likumdosana.gif)
+}
+
+h1.h1-ipashumastruktura {
+    background-image: url(/images/h1-ipashumastruktura.gif)
+}
+
+h1.h1-vesture {
+    background-image: url(/images/h1-vesture.gif)
+}
+
+h1.h1-organizacijas {
+    background-image: url(/images/h1-organizacijas.gif)
+}
+
+h1.h1-epakalpojumi {
+    background-image: url(/images/h1-epakalpojumi.gif)
+}
+
+h1.h1-eveidlapas {
+    background-image: url(/images/h1-eveidlapas.gif)
+}
+
+h1.h1-filatelijasjaunumi {
+    background-image: url(/images/h1-filatelijasjaunumi.gif)
+}
+
+h1.h1-logistika {
+    background-image: url(/images/h1-logistikaspakalpojumi.gif)
+}
+
+h1.h1-uznkoordin {
+    background-image: url(/images/h1-uznkoordin.gif)
+}
+
+h1.h1-aizliegtssutit {
+    background-image: url(/images/h1-aizliegtssutit.gif)
+}
+
+h1.h1-pastsrekviz {
+    background-image: url(/images/h1-pastsrekviz.gif)
+}
+
+h1.h1-uznkoordin {
+    background-image: url(/images/h1-uznkoordin.gif)
+}
+
+h1.h1-uzradok {
+    background-image: url(/images/h1-uzradok.gif)
+}
+
+h1.h1-aizliegtssutit {
+    background-image: url(/images/h1-aizliegtssutit.gif)
+}
+
+h1.h1-ibanstand {
+    background-image: url(/images/h1-ibanstand.gif)
+}
+
+h1.h1-terminnoguld {
+    background-image: url(/images/h1-terminnoguld.gif)
+}
+
+h1.h1-pakizmant {
+    background-image: url(/images/h1-pakizmant.gif)
+}
+
+h1.h1-westerntarifi {
+    background-image: url(/images/h1-westerntarifi.gif)
+}
+
+h1.h1-veidlpakalp {
+    background-image: url(/images/h1-veidlpakalp.gif)
+}
+
+h1.h1-nosiesp {
+    background-image: url(/images/h1-nosiesp.gif)
+}
+
+h1.h1-suttermini {
+    background-image: url(/images/h1-suttermini.gif)
+}
+
+h1.h1-eksprespasts {
+    background-image: url(/images/h1-eksprespasts.gif)
+}
+
+h1.h1-atlaides {
+    background-image: url(/images/h1-atlaides.gif)
+}
+
+h1.h1-tiesaispasts {
+    background-image: url(/images/h1-tiesaispasts.gif)
+}
+
+h1.h1-precespapastu {
+    background-image: url(/images/h1-precespapastu.gif)
+}
+
+h1.h1-preseskatalogs {
+    background-image: url(/images/h1-preseskatalogs.gif)
+}
+
+h1.h1-normakt {
+    background-image: url(/images/h1-normakt.gif)
+}
+
+h1.h1-aploksne {
+    background-image: url(/images/h1-pirmasdienasaploksne.gif)
+}
+
+h1.h1-valentins {
+    background-image: url(/images/h1-valentins.gif)
+}
+
+h1.h1-starpnaudparv {
+    background-image: url(/images/h1-starpnaudparv.gif)
+}
+
+h1.h1-iekshnaudparv {
+    background-image: url(/images/h1-iekshnaudparv.gif)
+}
+
+h1.h1-naudasparv {
+    background-image: url(/images/h1-naudasparv.gif)
+}
+
+h1.h1-naudasparsk {
+    background-image: url(/images/h1-naudasparsk.gif)
+}
+
+h1.h1-izstbukleti {
+    background-image: url(/images/h1-izstbukleti.gif)
+}
+
+h1.h1-speczimog {
+    background-image: url(/images/h1-speczimog.gif)
+}
+
+h1.h1-pasutkatal {
+    background-image: url(/images/h1-pasutkatal.gif)
+}
+
+h1.h1-2005gadplan {
+    background-image: url(/images/h1-2005gadplan.gif)
+}
+
+h1.h1-pastnieks {
+    background-image: url(/images/h1-pastnieks.gif)
+}
+
+h2.h2-pasta {
+    background-image: url(/images/h2-pasta-jaunumi.gif);
+    background-position: -2px 2px;
+}
+
+h2.h2-filatelija {
+    background-image: url(/images/h2-filatelijas-jaunumi.gif)
+}
+
+.e-pakalpojumi h2 {
+    background-image: url(/images/h2-e-pakalpojumi.gif);
+    margin-bottom: 12px;
+}
+
+h2.h2-pastmarkas {
+    background-image: url(/images/h2-pastmarkas.gif)
+}
+
+h2.h2-aploksne {
+    background-image: url(/images/h2-pirmasdienasaploksne.gif)
+}
+
+h2.h2-izstbukleti {
+    background-image: url(/images/h2-izstbukleti.gif)
+}
+
+h2.h2-speczimog {
+    background-image: url(/images/h2-speczimog.gif)
+}
+
+#related-vairak h2 {
+    background: url(/images/rl-vairak.gif) no-repeat;
+}
+
+#related-pakalpojumi h2 {
+    background: url(/images/rl-pakalpojumi.gif) no-repeat;
+}
+
+ul,ul li,ol {
+    margin: 0;
+    padding: 0;
+}
+
+ul,ul li {
+    list-style: none;
+}
+
+ol,ul ol li {
+    list-style: decimal;
+}
+
+#content-body li ul,#content-body ul ul {
+    margin-left: 20px;
+}
+
+#search-res dt,#content-body ul li {
+    background: url(/images/bullet.gif) no-repeat 2px 5px;
+    padding-left: 12px;
+}
+
+#content-body ul ul li {
+    background: url(/images/li-square.gif) no-repeat 5px 5px;
+}
+
+#content-body ol {
+    list-style: decimal;
+    margin-left: 10px;
+}
+
+#content-body ol li {
+    margin-left: 5px;
+    padding-left: 0;
+    background-image: none;
+}
+
+/* Augsha
+-------------------------------------*/
+#header {
+    color: #000;
+    background: #f8f8f8;
+}
+
+/* Pamata izkaartojums
+-------------------------------------*/
+.full {
+    background: transparent url(/images/default-bg.gif) repeat-y scroll 0px 0;
+}
+
+table.full {
+    background-image: none;
+}
+
+.default {
+    background: url(/images/default-bg.gif) repeat-y 50% 0;
+}
+
+#container .bottom-line {
+    height: 24px;
+    padding: 0;
+    margin: 0;
+    background: url(/images/default-bottom-line-990.gif) no-repeat 100% 50%;
+}
+
+#container.default .bottom-line,#container.full .bottom-line {
+    background-image: url(/images/default-bottom-line-990.gif);
+}
+
+#container.full .bottom-line {
+    background-image: url(/images/default-bottom-line-990.gif);
+}
+
+/* Kreisaa mala
+-------------------------------------*/
+#menu-body h2.privat {
+    background: url(/images/rl-privatpersonam.gif) no-repeat;
+    background-position: 100% 0;
+}
+
+#menu-body h2.uzn {
+    background: url(/images/rl-uznemumiem.gif) no-repeat;
+    background-position: 100% 0;
+}
+
+#menu-body .hotlinks {
+    
+}
+
+/*  Vidus
+-------------------------------------*/ /* Pirmaa lapa
+-------------------------------------*/
+#content-body #f-choice li,#content-body #promo-ads li {
+    background-image: none;
+}
+
+#content-body #f-choice #f-choice-p a {
+    background-image: url(/images/f-privatpersonam.jpg);
+}
+
+#content-body #f-choice #f-choice-u a {
+    background-image: url(/images/f-uznemumiem.jpg);
+}
+
+#promo-ads {
+    background: url(/images/promo-ads-d-bg.gif) no-repeat 0 0;
+}
+
+.firstpage #promo-ads {
+    background: url(/images/promo-ads-bg.gif) no-repeat 0 0;
+}
+
+#f-news ul li a {
+    text-decoration: none;
+    line-height: 1.8em;
+    font-weight: bolder;
+    color: #225F98;
+}
+
+#f-news ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Related linku vizualizacija
+-------------------------------------*/
+#info-body .content {
+    background-color: #f0f0f0;
+}
+
+/* Tabulu vizualizaacija
+-------------------------------------*/
+#content-body caption,#cat-thumb h2,#cat-thumb-hot h2 {
+    background: #4c79a3 url(/images/form-title.gif) no-repeat top right;
+    color: #fff;
+    line-height: 20px;
+    text-align: left;
+    font-weight: bold;
+}
+
+#cat-thumb h2,#cat-thumb-hot h2 {
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+#content-body table.form {
+    background: #efefef;
+}
+
+#content-body table.nostyle {
+    background: none;
+}
+
+#content-body th,#content-body th.sub,.richDataTable th {
+    color: #fff;
+    background: #93A6AA;
+    text-align: left;
+    vertical-align: top;
+}
+
+#content-body th.bgLightBlue,#content-body th.sub,.richDataTable th.bgLightBlue {
+    background-color: #4C79A3;
+}
+
+#content-body th a,.richDataTable th a {
+    color: #ffffff;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+#content-body .richDataTable th,#content-body .richDataTable td,.richDataTable th,.richDataTable td {
+    padding: 2px;
+    font-size: 12px;
+}
+
+#content-body th.sub {
+    background: #4c79a3;
+    border-bottom: 10px solid #efefef;
+}
+
+.table {
+    width: 100%;
+}
+
+.table td {
+    border: 1px solid #ccc;
+    border-width: 0px;
+}
+
+.table th {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #808080;
+    border-right: 1px solid #808080;
+    background-color: #f8f8f8 !important;
+    font-weight: normal;
+}
+
+.table .row th {
+    padding: 5px !important;
+    color: #4b4b4b !important;
+}
+
+.table .row td {
+    border-width: 0px !important;
+}
+
+/* Formas
+-------------------------------------*/
+.form {
+    background: #efefef;
+}
+
+.form .warn,.form sup,.shop-msg {
+    color: #ff0000;
+}
+
+.form label,.form textarea,.form .input,form .input-small {
+    color: #3b3b3b;
+}
+
+.form .input-small,.form .num {
+    text-align: right;
+}
+
+.form .action,.form .action input {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form .info {
+    background: #e6e6e4;
+    padding: 10px;
+}
+
+.form .buttons {
+    text-align: right;
+    background: #e1e1e1;
+    border-top: 10px solid #efefef;
+}
+
+.form td {
+    color: #716f64;
+    vertical-align: top;
+}
+
+.form td.mixed {
+    vertical-align: top;
+}
+
+.form tr.dark {
+    background: #e6e6e6;
+}
+
+.form .input,.form .input-small {
+    color: #716f64;
+}
+
+/* Veikals
+-------------------------------------*/
+.grozs-detailed td {
+    background-color: #d6dfe7;
+}
+
+.grozs-detailed td.label {
+    background-color: #94a6ad;
+    color: #fff;
+}
+
+.grozs-detailed td.descr {
+    background-color: #efefef;
+}
+
+.grozs-detailed td.buttons {
+    border-top: none;
+}
+
+.grozs-detailed .poga {
+    text-decoration: none;
+}
+
+.left,.form .left {
+    text-align: left;
+}
+
+.right,.form .right {
+    text-align: right;
+}
+
+.floatRight {
+    float: right;
+}
+
+.exportControl {
+    float: right;
+    font-weight: normal;
+    font-size: 12px;
+    color: #4b4b4b;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.noBackground {
+    background: none;
+}
+
+.center,.form .center {
+    text-align: center;
+}
+
+#shop-basket {
+    background-color: #efefef;
+    line-height: 20px;
+}
+
+.cat-img {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#shop-list.form tr,#shop-list.form {
+    position: relative;
+}
+
+a.timg {
+    position: relative;
+}
+
+a.timg:hover {
+    border-right: 0px;
+}
+
+img.cat-i {
+    display: none;
+}
+
+a.timg:hover img.cat-i {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    border-width: 0;
+    z-index: 1;
+}
+
+/* Mekleshanas rezultati
+-------------------------------------*/
+#search-res em {
+    color: #225f98;
+    font-style: normal;
+    font-weight: bold;
+}
+
+#search-res dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: #949494;
+}
+
+.search-nav {
+    background: #e1e1e1;
+}
+
+/* Jaunumi
+-------------------------------------*/
+.news-list strong,.news-date {
+    color: #b6b6b6;
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+.news-date {
+    margin-left: 0;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.news-links a {
+    line-height: 2em;
+}
+
+/* Vadiba
+-------------------------------------*/
+.persona,.cat-item,.po-box {
+    text-align: center;
+    background: #f2f2f2;
+}
+
+.cat-item,.po-box {
+    background: #fff;
+}
+
+.default .content .persona p {
+    color: #716f64;
+    line-height: 1.2em;
+    margin-top: 0;
+}
+
+.persona strong,.cat-item strong,.po-box strong {
+    color: #4b4b4b;
+    background: #e5e5e5;
+    font-weight: normal;
+}
+
+.cat-item strong {
+    color: #716f64;
+}
+
+/* E-pasta stils
+-------------------------------------*/
+a.pasts {
+    cursor: pointer;
+    display: inline;
+    margin-left: 0;
+}
+
+a.pasts em {
+    font-style: normal;
+    font-weight: normal;
+}
+
+a.pasts strong {
+    padding-left: 14px;
+    background: url(/images/suns.gif) no-repeat 0 2px;
+    font-weight: normal;
+}
+
+a.pasts span {
+    display: none;
+}
+
+/*  Valoda
+-------------------------------------*/
+.lang {
+    color: #4b4b4b;
+}
+
+.lang strong {
+    color: #225f98;
+}
+
+.lang strong,.lang span {
+    padding: 2px 3px;
+}
+
+/* Apaksha
+-------------------------------------*/
+#footer {
+    background: #f8f8f8;
+    color: #909090;
+}
+
+.first-page #footer {
+    
+}
+
+#footer p {
+    margin: 0;
+    padding: 14px 2px;
+    text-align: center;
+    line-height: 2em;
+}
+
+#footer img {
+    border: 0;
+    display: block;
+}
+
+/* Formu dizaini
+-----------------------------------*/
+#formblocktitle {
+    margin: 30px 0 30px 0 !important;
+    padding: 5px 0 5px 15px;
+    position: relative;
+    left: -15px;
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    background: url(/images/formtitle-bg.gif) repeat-y 0 0;
+}
+
+/* Pamata izkaartojums
+-------------------------------------*/
+html,body,form,table,img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.loadtime {
+    position: absolute;
+    top: 65px;
+    left: 80px;
+    font: italic 10px Arial, sans-serif;
+    color: #225F98;
+}
+
+.loadtime,.null,.systime {
+    display: none;
+}
+
+#header,#footer,#container,#container .bottom-line {
+    width: 980px;
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+#main {
+    margin: 0;
+    width: 980px;
+}
+
+.clear {
+    clear: both;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.news-links a {
+    margin-top: 10px;
+}
+
+/* Galva
+-------------------------------------*/
+#header {
+    height: 88px;
+}
+
+#header .logo img {
+    border: 0;
+    float: left;
+}
+
+/* Kreisaa mala
+-------------------------------------*/
+#menu-body .content h2,#menu-body .content h2 a,.jaunumi h2.h2-pasta a,.jaunumi h2.h2-filatelijas a,h1.h1-shop a,h1.h1-nodalas a
+    {
+    display: block;
+    width: 224px;
+    height: 16px;
+    margin: 0;
+}
+
+#menu-body .content h2 {
+    margin-bottom: 8px;
+}
+
+#menu-body .info {
+    margin-top: 5px;
+    min-height: 110px;
+    _height: 110px;
+    clear: both;
+}
+
+/* Pamata izkaartojums
+-------------------------------------*/
+#container {
+    position: relative;
+}
+
+#content-wrapper {
+    width: 790px;
+    float: right;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.firstpage #content-wrapper {
+    
+}
+
+#content-body {
+    width: 395px;
+    float: left;
+    background: url(/images/content-light-shadow.gif) repeat-x top;
+}
+
+#content-body .content {
+    background: transparent url(/images/content-top-left-shadow.gif) no-repeat scroll left top;
+    padding: 20px 0 0 20px;
+    position: relative;
+    margin: 0;
+}
+
+#anketatable {
+    width: 590px !important;
+    margin: 0;
+    padding: 0;
+}
+
+.firstpage #content-body {
+    
+}
+
+.full #content-body {
+    width: 790px;
+}
+
+.full #content-body .content {
+    background: url(/images/content-full-left-shadow.gif) repeat-x top left;
+    padding-right: 10px;
+    width: 760px;
+}
+
+#menu-body {
+    width: 190px;
+    margin: 0;
+    padding: 0 0 20px 0;
+    float: left;
+    background: url(/images/content-left-gray.gif) no-repeat 0 0;
+}
+
+#menu-body .content {
+    margin: 20px 0 0 0;
+    padding: 0;
+    background: #f8f8f8;
+}
+
+.default .content p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#container .bottom-line {
+    
+}
+
+/* Pirmaa lapa
+-------------------------------------*/
+#f-choice {
+    display: block;
+    width: 760px;
+    margin: 0;
+    clear: both;
+}
+
+#content-body #f-choice li {
+    width: 280px;
+    height: 225px;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+#content-body #f-choice li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#content-body #f-choice #f-choice-p {
+    margin-right: 10px;
+}
+
+#content-body h1 {
+    height: 16px;
+}
+
+.f-content {
+    text-align: center;
+}
+
+#promo-ads {
+    margin: 0 0 10px 190px;
+    padding-top: 15px;
+    padding-left: 10px;
+    width: 760px;
+    height: 110px;
+    text-align: center;
+    clear: both;
+}
+
+.firstpage #promo-ads {
+    padding-top: 0;
+    position: relative;
+    /*bottom: 180px;*/
+    bottom: 240px;
+}
+
+#promo-ads li {
+    display: inline;
+    padding-right: 10px;
+}
+
+.eme-logo,.exp-logo {
+    padding: 15px 0 0 0;
+    display: block;
+    width: 190px;
+}
+
+#promo-ads .partners {
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+#f-news {
+    margin-bottom: 1px;
+    height: 25px;
+    width: 760px;
+    float: left;
+    overflow: hidden;
+    /* border: 2px solid blue; */
+}
+
+#f-news ul {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    list-style: none;
+    white-space: nowrap;
+}
+
+#f-news li {
+    white-space: nowrap;
+    display: inline;
+}
+
+#f-news ul li a {
+    margin-right: 50px;
+}
+
+#news-scroll {
+    visibility: hidden
+}
+
+#mq {
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+}
+
+.partners {
+    width: 140px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.partners a {
+    
+}
+
+.partners .lep {
+    width: 58px;
+    height: 18px;
+    background-image: url(/images/mailmaster.png);
+    float: left;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+.partners .lppt { /*width: 37px;*/
+    width: 64px;
+    height: 23px;
+    background-image: url(/images/partner-lppt2.gif);
+    float: right;
+}
+
+#promo-ads .banner-list {
+    
+}
+
+/* Related linku vizualizacija
+-------------------------------------*/
+#info-body .content {
+    padding: 10px 0 0 10px;
+}
+
+#info-body .rl {
+    margin: 0;
+}
+
+.rl h2 {
+    width: 160px;
+    height: 16px;
+    display: block;
+    margin-bottom: 13px;
+}
+
+.rl ul {
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+.rl {
+    margin-left: 20px;
+}
+
+.rl li {
+    list-style: none;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+/* Tabulu vizualizaacija
+-------------------------------------*/
+#content-body caption {
+    padding: 0 0 0 5px;
+    width: 715px;
+}
+
+.full #content-body caption {
+    width: 715px;
+}
+
+#content-body table.box caption {
+    width: 250px;
+}
+
+@media all and (min-width: 0px) {
+    #content-body table>caption {
+        width: 370px; /* Opera back */
+    }
+    .full #content-body table>caption {
+        width: 715px; /* Opera back */
+    }
+    #content-body table.box>caption {
+        width: 245px;
+    }
+}
+
+#content-body table {
+    width: 375px;
+    /*margin-bottom: 10px;*/
+}
+
+.full #content-body table {
+    width: 100%;
+}
+
+.full #content-body td {
+    padding: 0px;
+}
+
+.full #content-body #nowrapp {
+    white-space: nowrapp !important;
+    width: 460px;
+}
+
+#content-body table.box {
+    width: 250px;
+}
+
+#content-body table.nostyle {
+    width: auto;
+}
+
+#content-body .nostyle td {
+    vertical-align: top;
+}
+
+#content-body th {
+    padding: 2px 4px;
+}
+
+.content td {
+    padding: 2px 4px;
+}
+
+.content tr.dark td {
+    padding: 5px 10px;
+}
+
+/* Formas
+-------------------------------------*/
+.form td {
+    padding: 5px 10px;
+}
+
+.form label {
+    width: 100px;
+    display: block;
+    margin-left: 5px;
+}
+
+.darbs-forma label {
+    width: 100px;
+}
+
+.darbs-forma td.label label {
+    width: 85px;
+}
+
+.full .form label {
+    width: 120px;
+}
+
+.form {
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+}
+
+.form .buttons {
+    padding: 5px;
+}
+
+.form .buttons a {
+    line-height: 25px;
+}
+
+.form select {
+    width: 224px;
+    border: 1px solid #a5acb2;
+    margin: 2px 0 3px 0;
+}
+
+.box select {
+    width: 125px;
+}
+
+.select-auto select {
+    width: auto;
+}
+
+.form .input,.form .input-small {
+    margin: 0;
+    padding: 2px 4px;
+    width: 214px;
+    border: 1px solid #a5acb2;
+}
+
+.darbs-forma .input,.darbs-forma select {
+    width: 190px;
+}
+
+.box .input {
+    width: 115px;
+}
+
+.form .input-small {
+    width: 30px;
+}
+
+.form .input:focus,.form textarea:focus {
+    border: 1px solid #7f9db9;
+}
+
+.form textarea {
+    width: 224px;
+    height: 140px;
+    border: 1px solid #a5acb2;
+    margin: 0 0 5px 0px;
+    padding: 0;
+}
+
+.form .info img {
+    margin-right: 10px;
+}
+
+/* Thumbnail mode
+-------------------------------------*/
+#cat-thumb,#cat-thumb-hot {
+    position: relative;
+    width: 500px;
+}
+
+#cat-thumb .cat-item,#cat-thumb-hot .cat-item {
+    position: relative;
+}
+
+#cat-thumb .cat-buy,#cat-thumb-hot .cat-buy {
+    position: absolute;
+    top: 155px;
+    left: 48px;
+    width: 23px;
+    height: 11px;
+}
+
+#cat-thumb .cat-buy {
+    background: transparent;
+}
+
+#cat-thumb .cat-item strong,#cat-thumb-hot .cat-item strong {
+    width: 120px;
+}
+
+/* Post offices
+-------------------------------------*/
+ul.columns {
+    display: block;
+    clear: both;
+    list-style: none;
+}
+
+#content-body .columns li {
+    background: none;
+    float: left;
+    margin: 0;
+    padding: 5px 10px 0 0;
+}
+
+.po-map {
+    width: 510px !important;
+    background: #f0f0f0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0;
+    display: block;
+    text-align: center;
+}
+
+.po-map img {
+    
+}
+
+/* Vadiba
+-------------------------------------*/
+.persona {
+    width: 120px;
+    display: block;
+    float: left;
+    margin: 0 5px 5px 0;
+}
+
+.persona img {
+    display: block;
+    border: 0;
+}
+
+.persona p {
+    margin: 0;
+    padding: 2px 0;
+}
+
+.persona strong,.cat-item strong {
+    display: block;
+    padding: 2px 0;
+}
+
+/* Labaa mala
+-------------------------------------*/
+#info-body {
+    width: 185px;
+    float: right;
+    background: url(/images/firstpage-right-top-bg.gif) repeat-x top;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+#menu-body .site-search {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.site-search .input,#search-full .input {
+    border: 1px solid #909090;
+    background: #e5e3e3;
+    width: 95px;
+    height: 14px;
+}
+
+#menu-body .site-search .input {
+    width: 140px;
+}
+
+#seach-full .input {
+    width: 200px;
+}
+
+.site-search .submit,#search-full .submit {
+    background: url(/images/button-bg.gif) no-repeat 0 0;
+    color: #fff;
+    width: 62px;
+    height: 20px;
+    margin: 0 0 0 10px;
+    border: 0;
+}
+
+#menu-body .submit {
+    float: right;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.lang {
+    margin: 10px;
+    display: block;
+    clear: both;
+}
+
+#menu-body .lang {
+    padding-bottom: 10px;
+    display: block;
+    text-align: center;
+}
+
+.jaunumi .block img {
+    float: left;
+    margin: 3px 15px 2px 5px;
+}
+
+.pastajaunumi,.jaunumi {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.jaunumi h2 {
+    margin-bottom: 5px;
+    margin-top: 10px;
+    clear: both;
+}
+
+.jaunumi p {
+    margin-top: 0;
+}
+
+.pastajaunumi p {
+    margin-left: 8px;
+}
+
+.pastajaunumi div {
+    clear: both;
+    float: none;
+    margin: 0 0 5px 0;
+    padding: 0;
+}
+
+.pastajaunumi object {
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+#menu-body a.poga-register {
+    width: 157px;
+    height: 32px;
+    background: url(/images/menu-register.gif) no-repeat 100% 0;
+    display: block;
+    text-decoration: none;
+    line-height: 30px;
+    padding-left: 23px;
+}
+
+#menu-body a.poga-register:hover {
+    text-decoration: underline;
+}
+
+/* Footer
+-------------------------------------*/
+#footer {
+    height: 51px;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: #F8F8F8;
+}
+
+#footer img {
+    display: inline;
+    vertical-align: text-bottom;
+}
+
+#footer .rights {
+    float: left;
+    margin-left: 175px;
+    width: 700px;
+}
+
+#footer .footer-partner {
+    float: left;
+    left: 28px;
+    top: 16px;
+    position: absolute;
+}
+
+#footer .footer-top {
+    float: right;
+    margin-right: 22px;
+    margin-top: 3px;
+}
+
+/* Print styles
+------------------------------------ */
+@media print {
+    body {
+        font-size: 12px;
+        background-color: #fff;
+        background-image: none;
+    }
+    #header,#menu-body,#info-body,#footer,#sub-menu,.loadtime {
+        display: none;
+        background: none !important;
+        background-image: none !important;
+    }
+    #content-body,#content-wrapper {
+        width: 790px;
+        float: left;
+        margin: 0;
+        background: none !important;
+        background-image: none !important;
+    }
+    #content-body,#content-body .content,#content-wrapper,#sub-menu {
+        background: none !important;
+        background-image: none !important;
+        font-size: 1.1em !important;
+    }
+    .news-links a {
+        display: none;
+    }
+    #content-body h1 {
+        padding-top: 0;
+        background: none;
+        height: 16px !important;
+    }
+    #promo-ads,.print_hide {
+        display: none
+    }
+}
+
+input.large,textarea.large {
+    width: 391px;
+}
+
+select.large {
+    width: 366px;
+}
+
+input.medium,textarea.medium {
+    width: 366px;
+}
+
+select.medium {
+    width: 376px;
+}
+select.medium2 {
+    width: 366px;
+}
+
+input.small,textarea.small {
+    width: 291px;
+}
+
+select.small {
+    width: 296px;
+}
+
+input.readonly,textarea.readonly {
+    background-color: #E1E1E1;
+}
+
+input.exchangeRate {
+    width: 346px;
+}
+input.calendarInputDay {
+    width: 25px;
+    vertical-align: middle;
+}
+input.abFilterAmount {
+    vertical-align: middle;
+}
+select.calendarInputMonth {
+    margin: 0 0 0 5px;
+    width: 336px;
+    vertical-align: middle;
+}
+select.calendarInputMonth2 {
+    margin: 0 0 0 5px;
+    width: 326px;
+    vertical-align: middle;
+}
+
+select.calendarSelectSmall {
+    margin: 0 0 0 5px;
+    width: 136px;
+    vertical-align: middle;
+    
+}
+
+select.abcalendarInputMonth {
+    margin: 0 0 0 5px;
+    vertical-align: middle;
+}
+
+select.abexchangeRateType {
+    vertical-align: middle;
+}
+
+input.abexchangeRate {
+    margin: 0 0 0 5px;
+	vertical-align: middle;
+}
+
+input.abexchangeRateReadonly {
+    background-color: #E1E1E1;
+	margin: 0 0 0 5px;
+	vertical-align: middle;
+}
+
+.abseredina {
+	margin-left: 5px;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+.extInfMargin {
+	margin-top:20px;
+	margin-left:20px;
+}
+
+.pdfMovMarginData {
+	margin-top:10px;
+}
+
+.full #content-body table table.tableBorderPanel .extInfMargin {
+	width: auto;
+}
+.full #content-body table table.tableBorderPanel .extInfMargin td {
+	border: 0px;
+}
+form#extInfForm table.tableContentPanel table.tableDataPanel table.tableBorderPanel td {
+    background: #EFEFEF;
+	border: 0;
+}
+
+.rich-calendar-exterior input.rich-calendar-input,input.rich-calendar-input {
+    width: 366px;
+}
+
+input.full,textarea.full {
+    width: 366px;
+    background: #FFFFFF;
+}
+
+.TextLimitedCount {
+    width: 374px;
+}
+
+select.full {
+    width: 376px;
+}
+
+.formTable input.amount {
+    width: 300px;
+}
+
+.formTable select.currency {
+    width: 61px;
+    margin-left: 5px;
+    vertical-align: top;
+}
+
+.formTable input.currency {
+    width: 51px;
+    margin-left: 5px;
+    vertical-align: top;
+}
+
+.formPanel {
+    width: 760px;
+}
+
+#content-body h1.table_title,h1.table_title {
+    color: #225F98;
+    font-size: 14px;
+    padding: 0;
+    overflow: visible;
+    text-indent: 21px;
+    font-family: Tahoma;
+    font-size: 15px;
+}
+
+.formTable {
+    background: #fff none repeat scroll 0 0;
+    width: 100%;
+}
+
+.formTable td, .tableForm td {
+    background-color: #EFEFEF;
+    border: 0;
+}
+
+.tableForm table.tableContentPanel table.tableDataPanel td {
+	background-color: #F8F8F8;
+	border: 0;
+}
+
+/*.tableForm td table.rich-table{
+    border: 0;
+}*/
+
+.formTable td .rich-calendar-exterior td.rich-calendar-cell, .tableForm td .rich-calendar-exterior td.rich-calendar-cell{
+    background-color: #FFFFFF;
+}
+
+.content input[type=text],.content input[type=password],.content input[type=text],.content input[type=file],.content textarea,.content select
+    {
+    border: 1px solid #A5ACB2;
+    padding: 2px 4px;
+    border-collapse: collapse;
+    color: #716F64;
+    font-size: 12px;
+    font-family: Arial;
+}
+
+.content select {
+    height: auto;
+    padding: 0;
+}
+
+.content input {
+    height: 13px;
+}
+
+.content input[type=button],.content input[type=submit],.content input[type=file],.content input.file {
+    height: auto;
+}
+
+.content input.button,.content input.ext_button,.content input.max_button,.content input.ext2_button {
+    height: auto;
+    _height: 23px;
+}
+
+.content input.file {
+    height: 19px;
+}
+
+.content input[type="text"],.content input[type="password"],.content textarea {
+    padding: 2px 4px;
+}
+
+.full #content-body table.formPanel td .formTable td.formFieldLabel,  {
+    padding-left: 22px;
+    width: 195px;
+}
+
+.full #content-body .tableForm td.formFieldLabel,  {
+    padding-left: 22px;
+    width: 195px;
+}
+
+.full #content-body td.formFieldValue {
+    width: 520px;
+}
+
+.full #BalanceForm td.formFieldValue {
+    width: 600px;
+}
+
+.full #content-body td.formFieldHelp {
+    width: 10px;
+    text-align: left;
+}
+
+.full #content-body td.formFieldHelp img.help,img.help,img.link {
+    border: 0;
+    vertical-align: bottom;
+}
+
+.full #content-body table.formPanel td .formTable .first td,table.formPanel td .formTable .first td {
+    padding-top: 15px;
+}
+
+.full #content-body form.tableForm table td.formFieldLabel {
+    padding-top: 15px;
+}
+
+.full #content-body form.tableForm table td.formFieldLabel {
+    padding: 5px;
+}
+
+.full #content-body table.formPanel td .formTable .last td,table.formPanel td .formTable .last td {
+    padding-bottom: 15px;
+}
+
+.full #content-body table.formPanel td .formTable .first td .rich-calendar-exterior td,.full #content-body table.formPanel td .formTable .last td .rich-calendar-exterior td,table.formPanel td .formTable .first td .rich-calendar-exterior td,table.formPanel td .formTable .last td .rich-calendar-exterior td,table.formPanel td .formTable td .rich-calendar-exterior td,.full #content-body .rich-calendar-exterior td
+    {
+    padding: 5px;
+}
+
+.full #content-body table.formPanel td .formTable td.delimiter-text {
+    padding: 0;
+}
+
+.formFooter {
+    width: 100%;
+    float: left;
+    text-align: right;
+    background-color: #E1E1E1;
+    padding: 5px 0 5px 0;
+    height: auto;
+    display: block;
+}
+
+.formFooter .formFooterInside {
+    padding: 0 10px 0 10px;
+    width: auto;
+    height: auto;
+}
+
+.formFooter input {
+    margin: 5px 0px 5px 10px;
+    padding: 1px 5px;
+    font-size: 12px;
+}
+
+.formFooter .footerTextLeft {
+    float: left;
+    text-align: left;
+}
+
+input.button,input.ext_button,input.max_button,input.ext2_button {
+    background-color: #D4D0C8;
+    border: 2px outset #F2F0EE;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 1px 5px; #
+    padding: 1px 0;
+}
+
+.full #content-body td.delimiter-text {
+    background-color: #F8F8F8;
+    height: 22px;
+    padding: 0;
+}
+
+.full #content-body table.formPanel td .formTable td.delimiter-padding,.full #content-body td.delimiter-padding {
+    padding-left: 25px;
+}
+
+.full #content-body .content form {
+    margin-bottom: 20px;
+    float: right;
+    width: 100%;
+}
+
+.full #content-body table.tableContentPanel,.tableContentPanel {
+    width: 760px;
+}
+
+.full #content-body table.tableContentPanel,.tableContentPanel {
+    padding: 0;
+}
+
+.full #content-body table.tableContentPanel,.tableContentPanel td {
+    padding: 0;
+}
+
+.full #content-body td.delimiter-text .blue-belt {
+    background: #4C79A3 url(/images/form-title.gif) no-repeat scroll right top;
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: left;
+    padding: 0 0 0 5px;
+    width: 715px;
+    margin-top: 14px;
+    height: 22px;
+}
+
+.red {
+    color: #FD0002;
+}
+
+.error {
+    color: #FD0002;
+    padding: 2px;
+}
+
+
+.login-warn {
+    color: #FD0002;
+    font-weight: bold;
+    padding: 2px;
+}
+
+#content-body ul li.error {
+    background: transparent url(/images/rl-bullet.gif) no-repeat scroll 2px 5px;
+    padding-left: 16px;
+}
+
+.full #content-body table table {
+    width: auto;
+}
+
+.formTable input[type=file] {
+    height: auto;
+}
+
+.formTable input.button,.formTable input.max_button {
+    height: 19px;
+    border: auto;
+}
+
+.full #content-body table.rich-calendar-popup,table.rich-calendar-popup {
+    background-color: #EFEFEF;
+    color: #4B4B4B;
+}
+
+.full #content-body .rich-calendar-exterior,.full #content-body .rich-calendar-header,.full #content-body .rich-calendar-week,.formPanel .rich-calendar-exterior,.formPanel .rich-calendar-header,.formPanel .rich-calendar-week
+    {
+    background-color: #EFEFEF;
+    font-size: 11px;
+    padding: 5px;
+}
+
+.full #content-body .rich-calendar-today,.formPanel .rich-calendar-today {
+    background-color: #E1E1E1;
+}
+
+.full #content-body table.rich-calendar-popup td.rich-calendar-header table,.formPanel table.rich-calendar-popup td.rich-calendar-header table
+    {
+    width: 100%;
+}
+
+#header .rightBox {
+    width: 150px;
+    float: right;
+    margin-right: 0px;
+    _margin-right: 0px;
+    position: relative;
+    z-index: 50;
+}
+
+#header .rightBox br {
+    clear: both;
+}
+
+#header .rightBox {
+    color: #7A7A7A;
+}
+
+#header .rightBox a {
+    float: right;
+    margin-top: 8px;
+    text-decoration: none;
+    color: #7A7A7A;
+    display: block;
+}
+
+#header .rightBox a span.link {
+    text-decoration: underline;
+}
+
+#header .rightBox a img {
+    border: 0;
+    margin-left: 6px;
+    vertical-align: bottom;
+}
+
+#header .rightBox .usercode {
+    float: right;
+    padding-top: 12px;
+    white-space: nowrap;
+}
+
+#header .rightBox .unreadMail {
+    float: right;
+    padding-top: 2px;
+    text-align: right;
+    white-space: nowrap;
+    width: 150px;
+    font-size: 11px;
+    color: #FD0002;
+}
+
+#header .rightBox .unreadMailRead {
+    float: right;
+    padding-top: 2px;
+    text-align: right;
+    white-space: nowrap;
+    width: 150px;
+    font-size: 11px;
+}
+
+#header .rightBox .unreadMailRead a {
+    margin: 0;
+    text-decoration: underline;
+    font-size: 11px;
+    color: #225F98;
+}
+
+div.backlink {
+    float: left;
+}
+
+.full #content-body .tablePanel {
+    margin-bottom: 20px;
+    width: 760px;
+}
+
+.full #content-body .tablePanel>tr>td {
+    width: 760px;
+}
+
+.full #content-body .tablePanel td {
+    padding: 0;
+}
+
+.full #content-body .richDataTable th,.full #content-body .richDataTable td {
+    padding: 3px;
+    font-size: 12px;
+}
+
+.full #content-body .richDataTable td.closed {
+    font-style: italic;
+    color: #929191;
+}
+
+.full #content-body .richDataTable td.closed a {
+    font-style: italic;
+    color: #929191;
+}
+
+.full #content-body .richDataTable td .smallTxt {
+    font-size: 11px;
+}
+
+.full #content-body .richDataTable th {
+    text-align: center;
+    padding-top: 4px;
+}
+
+.full #content-body .richDataTable th.left {
+    text-align: left;
+}
+
+.full #content-body .richDataTable th.right {
+    text-align: right;
+}
+
+.full #content-body .richDataTable td .tableFooter td,.full #content-body .richDataTable td .tableFooter th,.richDataTable td .tableFooter td,.richDataTable td .tableFooter th
+    {
+    border: 0;
+}
+
+.full #content-body .richDataTable,.full #content-body .tableDataPanel,.full #content-body table table.tableBorderPanel,.full #content-body table .formTable
+    {
+    width: 100%;
+}
+
+.full #content-body .richDataTable td,.richDataTable td {
+    background-color: #EFEFEF;
+    font-size: 12px;
+}
+
+.full #content-body .richDataTable td.dark,.richDataTable td.dark {
+    background-color: #CDCDCD;
+    font-size: 12px;
+}
+
+.full #content-body .richDataTable td,.full #content-body .richDataTable th,.richDataTable td,.richDataTable th {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+.full #content-body .richDataTable td.lastAccount,.richDataTable td.lastAccount {
+    border-bottom: 1px solid #93A6AA;
+}
+
+.full #content-body .richDataTable td.tableRowSelector,.full #content-body .richDataTable th.tableRowSelector,.richDataTable td.tableRowSelector,.richDataTable th.tableRowSelector
+    {
+    width: 1%;
+}
+
+.full #content-body .richDataTable .noBorder td,.full #content-body .richDataTable .noBorder th,.richDataTable .noBorder td,.richDataTable .noBorder th
+    {
+    border: 0;
+}
+
+.full #content-body table.formPanel td {
+    padding: 0;
+}
+
+.full #content-body table.formPanel td .formTable td, .full #content-body form.tableForm td .rich-calendar-date-layout td {
+    padding: 5px;
+}
+
+.full #content-body .tableForm td.formFieldValue {
+    padding: 5px;
+}
+
+.full #content-body table.formPanel td .formTable td.delimiter-padding {
+    padding-left: 20px;
+}
+
+.full #content-body table.formPanel td .formTable td.formFieldLabel {
+    padding-left: 25px;
+}
+
+.full #content-body table.formPanel tr.last td {
+    padding-bottom: 20px;
+}
+
+.full #content-body .tablePanel table {
+    width: 100%;
+}
+
+.full #content-body .tablePanel table.pagerPanel {
+    width: 100%;
+}
+
+.full #content-body .tablePanel table.pagerPanel .left,.full #content-body .tablePanel table.pagerPanel .right {
+    width: 25%;
+}
+
+.full #content-body .tablePanel table.pagerPanel .center {
+    width: 50%;
+    text-align: left;
+}
+
+.full #content-body .tablePanel table.pagerPanel .right {
+    text-align: right;
+}
+
+.ajaxProcessLoader {
+    position: fixed;
+    _position: absolute;
+    left: 943px;
+    top: 100px;
+    display: block;
+    height: auto;
+    width: auto;
+    z-index: 100;
+}
+
+.formPanel img.rich-calendar-button, .formTable img.rich-calendar-button, .tableForm img.rich-calendar-button {
+    margin-left: 3px;
+}
+
+.formTable input[type=submit],.formTable input[type=button] {
+    font-size: 12px;
+    height: 22px;
+    padding-bottom: 5px;
+}
+
+#login_formFormTable {
+    margin-top: 7px;
+}
+
+.full #content-body .tablePanel table.statusLegendTable {
+    width: 100%;
+    height: 40px;
+}
+
+.full #content-body .tablePanel table.statusLegendTable td.image {
+    width: 25px;
+}
+
+.full #content-body .tablePanel table.statusLegendTable td.text {
+    text-align: left;
+}
+
+.table_title {
+    color: #4C79A3;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.table_subtitle {
+    color: #4C79A3;
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+.tooltip {
+    display: none;
+    font-size: x-small;
+    position: absolute;
+    z-index: 101;
+    color: black;
+    background-color: #ffffaf;
+    border: 1px solid black;
+    padding: 10px;
+    width: 350px;
+}
+
+body#logout {
+    background: none;
+    padding: 25px 25px;
+    text-align: center;
+}
+
+table.logout {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+table.logout .logout_content {
+    width: 100%;
+    background-color: #EFEFEF;
+    font-size: 12px;
+    color: #5B5B5B;
+    padding: 28px 20px;
+}
+
+table.logout .logout_content a {
+    color: #000000;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+table.logout .logout_content p {
+    padding-bottom: 18px;
+    margin: 0;
+}
+
+table.logout .logout_content p.text {
+    padding-bottom: 9px;
+}
+
+input.selectAll {
+    float: left;
+}
+
+.TextLimitedCount {
+    text-align: right;
+}
+
+.TextLimitedCurrent,.TextLimitedSeparator,.TextLimitedMax {
+    display: inline;
+    text-align: right;
+}
+
+.TextLimitedSeparator {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.ajaxProcessCover {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eeeeee;
+    cursor: wait;
+    display: block;
+    filter: alpha(opacity = 50);
+    opacity: 0.5;
+    vertical-align: middle;
+    z-index: 1000;
+    position: fixed;
+    _position: absolute;
+    _text-align: center;
+}
+
+.ajaxLoaderImageMiddle {
+    margin: 25% 50% auto 50%;
+    position: fixed;
+    _position: absolute;
+    z-index: 1001;
+}
+
+.ajaxLoaderImage {
+    top: 100px;
+    position: fixed;
+    z-index: 2000;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.bankCodeSeparator {
+    padding: 0 2px;
+    text-align: center;
+    font-weight: bold;
+}
+
+input.bankCode1 {
+    width: 100px;
+}
+
+input.bankCode2 {
+    width: 249px;
+}
+
+.full #content-body table table.movementInfo {
+    width: 100%;
+}
+
+.full #content-body .movementInfo {
+    margin: 5px 0 10px 0;
+}
+
+.full #content-body .movementInfo td {
+    padding: 1px;
+}
+
+.full #content-body .movementInfo td.column1 {
+    font-weight: bold;
+    width: 16%;
+}
+
+.full #content-body .movementInfo2 {
+    margin: 0 0 10px 0;
+}
+
+.full #content-body table.formPanel td.backLink,.full #content-body td.backLink {
+    padding-top: 12px;
+}
+
+.noRendered {
+    display: none;
+}
+
+.noPadding {
+    padding: 0;
+}
+
+.full #content-body table.formPanel td .formTable td.noPadding {
+    padding: 0;
+}
+
+.full #content-body table.formPanel td .formTable td.noPadding table.richDataTable td {
+    padding: 5px;
+}
+
+a.questionLink {
+    background: transparent url(/images/questions.gif) no-repeat scroll 15px 10px;
+    float: left;
+    padding: 8px 0 0 35px;
+}
+
+a.loginLink {
+    background: transparent url(/images/questions.gif) no-repeat scroll 15px 10px;
+    float: left;
+    padding: 8px 0 0 35px;
+}
+
+a.questionLinkInRow {
+    background: transparent url(/images/questions.gif) no-repeat scroll 0px 2px;
+    float: left;
+    padding: 0px 0 0 20px;
+}
+
+a.titleLinkClass {
+	color: red;
+    font-size: 12px;
+    font-weight: normal;
+    margin-left: 20px;
+}
+
+a.titleLink2Class {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.full #content-body .richDataTable tr.rowHover td,.richDataTable tr.rowHover td,.full #content-body .richDataTable tr.rowHover,.richDataTable tr.rowHover
+    {
+    background-color: #F5B031;
+}
+
+.minus {
+    color: #EC0002;
+}
+
+.plus {
+    color: #00A802;
+}
+
+.full #content-body table.formPanel td .formTable td .timePeriod td {
+    white-space: nowrap;
+    padding: 0;
+}
+
+.full #content-body .formTable td .timePeriod td {
+    white-space: nowrap;
+    padding: 0;
+}
+
+.full #content-body .tableForm td .timePeriod td {
+    white-space: nowrap;
+    padding: 0;
+}
+
+.full #content-body table.formPanel td .formTable td .timePeriod td label {
+    padding-right: 3px;
+}
+
+.full #content-body .richDataTable td.grayRow,.richDataTable td.grayRow,.grayRow {
+    background-color: #E1E1E1;
+}
+
+.full #content-body .richDataTable td.borderBottomWhite,.full #content-body .richDataTable th.borderBottomWhite,.richDataTable td.borderBottomWhite,.richDataTable th.borderBottomWhite
+    {
+    border: 0;
+    border-bottom: 1px solid white;
+    border-collapse: collapse;
+}
+
+.full #content-body .richDataTable td.borderBottomGray,.full #content-body .richDataTable th.borderBottomGray,.richDataTable td.borderBottomGray,.richDataTable th.borderBottomGray
+    {
+    border: 0;
+    border-bottom: 1px solid #E1E1E1;
+    border-collapse: collapse;
+}
+
+a.csvLink {
+    padding-left: 6px;
+}
+
+input.topBottomMargin {
+    margin: 10px 0 5px 0;
+}
+
+.securedLogo {
+    bottom: 15px;
+    clear: both;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+}
+
+.full #content-body .richDataTable .cardsInfo {
+    width: 100%;
+}
+
+.full #content-body .richDataTable .cardsInfo td {
+    border: 0;
+}
+
+.full #content-body .richDataTable .cardsInfo td.cardsInfo1 {
+    width: 25%;
+}
+
+.full #content-body .richDataTable .cardsInfo td.cardsInfo2 {
+    width: 35%;
+}
+
+.full #content-body .richDataTable .cardsInfo td.cardsInfo3 {
+    width: 15%;
+}
+
+.full #content-body .richDataTable .cardsInfo td.cardsInfo4 {
+    width: 25%;
+}
+
+.helpTooltip {
+    display: none;
+    font-size: 11px;
+    position: absolute;
+    color: #7A7A7A;
+    background-color: #f4f2f2;
+    border: 1px solid black;
+    padding: 10px;
+    width: 350px;
+}
+
+a.unreadMail {
+    font-weight: bold;
+}
+
+.block {
+    display: block;
+    margin-bottom: 2px;
+}
+
+.fixedFooter {
+    height: 40px;
+}
+
+.formFooter input.noMarginCheckbox {
+    vertical-align: middle;
+    margin: 0 5px 0 0;
+}
+
+.formFooterInside {
+    width: 100%;
+}
+
+.full #content-body table.formPanel td.simpleTable {
+    padding: 3px;
+    font-size: 12px;
+}
+
+.asdf {
+    margin-bottom: 10px;
+}
+
+.till {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.mov-date-filter {
+	width: 100px;
+	
+}
+
+.abfilter-table-message {
+    color: #4C79A3;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    background: #F8F8F8;
+}
+
+.movement-type {
+    margin-left: 5px; 
+    margin-right: 5px;
+}
+
+.tbacklink {
+    padding-top: 15px;
+	background: #F8F8F8;
+}
+
+.tbacklinkText {
+	background: #F8F8F8;
+	padding-left: 5px; 
+    font-size: 12px;
+}
+
+.info-block {
+	background: #FEEEBD;
+	padding: 3px 16px;	
+	border-bottom: 1px solid #E3CD7F;
+}
+.formFieldLink {
+    color: #4C79A3;
+    text-decoration: underline;
+    padding-left: 5px;
+}
+.formTreeField {
+    padding-left: 5px;
+}
+.formSwift {
+	color: #4C79A3;
+}
+.swift_msg {
+    background-color:#EFEFEF;
+    padding:5px;
+    padding-left: 25px;
+}
+
+.account_typeF_main {
+    font-weight: bold;
+    color: red;
+}
+.account_typeF_sub {
+    color: green;
+}
+.account_typeF_main a {
+    font-weight: bold;
+    color: red;
+}
+.account_typeF_sub a {
+    color: green;
+}
+
+.check_cell {
+    width: 10%;
+}
+
+.multi-sign {
+    color: #F69C1C;
+    font-style: italic;
+    font-weight: bold;
+}
+.multi-sign-otp {
+    color: #E3CD7F;
+}
+.multi-sign-otp-cent {
+    color: #F69C1C;
+    text-align: center;
+}
+.multi-sign-otp-formTreeField {
+    padding-left: 5px;
+    color: #F69C1C;
+}
+.multi-sign-otp-left {
+    color: #F69C1C;
+    float: left;
+}

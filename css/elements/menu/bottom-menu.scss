@@ -1,0 +1,136 @@
+
+.bottom-menu {
+	
+
+	/**
+	 * Constants
+	 */
+	
+	// Outer bar shadow
+	@bar-shadow: 0 1px 3px 0px rgba(0,0,0,.7);
+	
+	// Light horizontal shadow for hover state
+	@side-shadow: inset 15px 0px 12px -11px rgba(0,0,0,0.15),
+					inset -15px 0px 12px -11px rgba(0,0,0,0.15);
+	
+	// Darker shadow to simulate "pressing" effect "onclick"
+	@active-state-shadow: inset 12px -2px 12px -9px rgba(0,0,0,0.15),
+							inset -10px 2px 9px -6px rgba(0,0,0,0.15),
+							inset 0 8px 17px -3px rgba(0,0,0,0.15);
+
+	margin: 0 0 30px 0;
+
+	/* .background-image(linear-gradient(to bottom, #f6f3ea 0%,#eee9dc 100%));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f3ea', endColorstr='#eee9dc',GradientType=0);
+	.box-shadow(@bar-shadow); */
+	letter-spacing: normal;
+
+	a {
+		display: inline-block;
+		color: #424242;
+		font-size: 11px;
+		font-weight: 400;
+		text-transform: uppercase;
+		text-align: center;
+		vertical-align: middle;
+		float: left;
+
+		
+		/**
+		 * Show kinda divider around active button
+		 */
+		&:hover,
+		&:active, {
+			/* .box-sizing(border-box); */
+			padding: 0 1px 0 1px;
+			border-left: 1px solid #f0ecdf;
+			border-right: 1px solid #f0ecdf;
+		}
+
+		&.active {
+			pointer-events: all;
+		}
+
+
+		// #f0ecdf;
+
+		// &.active {
+		// 	border: none;
+		// 	padding: 0;
+		// }
+		
+		/**
+		 * Do not show borders that brake layout
+		 */
+		&:first-child.active,
+		&:first-child:active,
+		&:first-child:hover {
+			border-left: none;
+		}
+
+		&.last.active,
+		&.last:active,
+		&.last:hover {
+			border-right: none;
+		}
+
+		&:nth-child(6).last {
+			width: 16.673%;
+			&.browser,
+			&.ipad {
+				width: 16.673%;
+			}
+		}
+
+		/**
+		 * Hover state
+		 */
+		&:hover {
+			/* .background-image(linear-gradient(to bottom, #d9d4c9 0%,#f4f0e4 100%)); */
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d9d4c9', endColorstr='#f4f0e4',GradientType=0);
+			/* .box-shadow(@side-shadow); */
+		}
+
+		/**
+		 * Clicked state
+		 */
+		&:active {
+			/* .background-image(linear-gradient(to bottom, #bab8b1 0%,#e6e3d8 100%)); */
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bab8b1', endColorstr='#e6e3d8',GradientType=0);
+			/* .box-shadow(@active-state-shadow); */
+		}
+	
+		/**
+		 * Current (active) state
+		 */
+		&.active {
+			/* .background-image(linear-gradient(to bottom, #cdb676 0%,#eace81 100%)); */
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cdb676', endColorstr='#eace81',GradientType=0);
+			/* .box-shadow(@side-shadow); */
+
+		}
+
+		
+
+		.outer {
+			display: inline-block;
+			width: 1px;
+			vertical-align: middle;
+			height: 49px;
+
+			&+span {
+				padding: 5px 10px;
+				display: inline-block;
+				width: 106px;
+				vertical-align: middle;
+			}	
+		}
+	}
+
+	.pure-u-1-8,
+	.pure-u-1-9 {
+		.outer+span {
+			width: 76px
+		}
+	}
+}

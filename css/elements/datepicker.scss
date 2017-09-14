@@ -1,0 +1,121 @@
+#ui-datepicker-div {
+	border: 0;
+	width: 180px;
+	background: #f2eee3;
+	padding: .3em .3em 0;
+	margin-top: -40px;
+	/* margin-top: ~'-39px\9'; */
+	margin-left: -30px;
+	.ui-datepicker-title,
+	.ui-widget-header {
+		background: #f2eee3;
+		border: 1px solid #f2eee3;	
+	}
+	
+	.ui-datepicker-title {
+		color: #724c01;
+	}
+	
+	.ui-datepicker-calendar {
+		border: 1px solid #b69244;
+		thead {
+			tr {
+				border-bottom: 1px solid #b69244; 
+				th {
+					color: #b69244;
+					&:before {
+						display: none;
+					}
+					span {
+						font-weight: normal;
+					}
+				}
+			}
+		}
+		.ui-datepicker-current-day a {
+			background: #b69244;
+			color: #fff;
+		}
+	}
+	
+	.ui-datepicker-header {
+		position: relative;
+	}
+	
+	.ui-datepicker-prev {
+		left: 10px;
+		top: 4px;
+	}
+	
+	.ui-datepicker-next {
+		right: 10px;
+		top: 4px;
+	}
+	
+	.ui-datepicker-prev span,
+	.ui-datepicker-next span,
+	.prev-year,
+	.next-year {
+		background-repeat: no-repeat;
+		background-image: url('/assets/img/icons/datepicker-nav.png');	
+		width: 11px;
+		height: 13px;
+		display: inline-block;
+		position: absolute;
+		cursor: pointer;
+	}
+	
+	.ui-datepicker-prev span {
+		background-position: 0px -10px;
+	}
+	
+	.ui-datepicker-next span {
+		background-position: 4px -22px;
+	}
+	
+	.prev-year {
+		background-position: 0 2px;
+		top: 9px;
+	}
+	
+	.next-year {
+		background-position: 0 -34px;
+		right: 2px;
+		top: 9px;
+	}
+	
+	.ui-state-disabled {
+		cursor: default !important;
+	}
+	
+	.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default,
+	.ui-datepicker-calendar tr,
+	.ui-datepicker-calendar tr:first-child td {
+		border: 0;
+		background: #fff;
+		color: #b69244;
+		text-align: center;
+		font-weight: normal;
+	}
+	
+	.ui-datepicker-calendar td:before {
+		display: none;
+	}
+	
+	.ui-state-hover {
+		background: none !important;
+		border: none !important;
+		color: #724c01 !important;
+		font-weight: normal !important;
+	}
+	
+	.ui-state-default:hover {
+		background: #b69244;
+		color: #fff;
+	}
+
+	// To prevent datepicker incorrect positioning on page init
+	&.tarrifs {
+		display: none;	
+	}
+}

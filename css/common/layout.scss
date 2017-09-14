@@ -1,0 +1,130 @@
+/*
+ * Page layout, backgrounds, etc.
+ * Here goes everything what is common, but doesn't fit in any other file	
+ */
+
+html, body {
+	min-height: 100%;
+}
+
+body {
+	// .background-image(linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 80%), url('/assets/img/pattern.png'));
+
+	&.no-scroll {
+		overflow: hidden;
+	}
+}
+
+
+
+.content {
+	margin-bottom: 50px;
+	&.landing {
+		margin-top: 0;
+		margin-bottom: 20px
+	}
+}
+
+.left {
+	width: 620px;
+	min-height: 1px;
+	margin-right: 17px;
+	display: inline-block;
+	float: left;
+}
+	
+aside {
+	display: inline-block;
+	vertical-align: top;
+	width: 300px;
+}
+
+
+
+
+//
+// ---------------- General page layout ----------------
+//
+.wrapper {
+	width: 940px;
+	min-width: 940px;
+	margin: 0 auto;
+	position: relative;
+	background-color: #fff;
+	padding: 0 30px;
+	border: 1px solid #c1c1c1;
+	border-top: none;
+	
+}
+
+.tab-content {
+	display: none;
+	&.active {
+		display: block;
+	}
+}
+
+
+//
+// ---------------- Image align in supra ---------------- 
+//
+
+img,
+.supra-image {
+	&.align-right {
+		float: right !important;
+		margin-top: 15px !important;
+		margin-bottom: 15px !important;
+		margin-left: 15px !important;
+	}
+	&.align-middle {
+		margin-top: 15px !important;
+		margin-bottom: 15px !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		display: block !important;
+		
+	}
+	&.align-left {
+		float: left !important;
+		margin-top: 15px !important;
+		margin-bottom: 15px !important;
+		margin-right: 15px !important;
+	}
+}
+
+
+// Align in supra 
+td {
+
+	&[align="right"] {
+		text-align: right !important;
+	}
+
+	&[align="left"] {
+		text-align: left !important;
+	}
+
+	&[align="center"] {
+		text-align: center !important;
+	}
+
+}
+
+
+//
+// ---------------- Additional reset for forms ----------------
+//
+input,
+textarea,
+select {
+	// Without this input sizes won't be the same in
+	// all browsers
+	// .box-sizing (border-box);
+}
+
+textarea {
+	// Horizontal resize will break layout
+	resize: vertical;
+	// min-height: 150px;
+}

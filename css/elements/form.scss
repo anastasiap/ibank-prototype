@@ -1,0 +1,467 @@
+.form-wrapper,
+.modal {
+	margin-top: 20px;
+	background: #fafafa;
+	padding: 30px 50px;
+	// .box-shadow(0 1px 3px 0px rgba(0,0,0,.7));
+	// .box-sizing(border-box);
+
+	h2 {
+		font-weight: 700;
+		// font-weight: ~'bold\9';
+	}
+}
+
+form {
+
+	.personalInformation {
+		.add-file + .diploma {
+				margin-top: 15px;
+			}
+	}
+
+	.pure-g {
+		margin: 20px 0 0 0;
+		position: relative;
+
+		&.personal-info {
+			margin-bottom: 15px;
+			
+			+.diploma {
+				margin-bottom: 15px;	
+			}
+		}
+
+		.pure-u-1-5 {
+			width: 6%;
+		}
+
+		.pure-u-2-5.date,
+		.pure-u-2-5.period {
+			position: relative;
+		}
+	}
+
+
+	div[class*="pure-u"] {
+		margin: 15px 0 0 0;
+
+		.select {
+			margin: 0;
+			float: left;
+			width: 95px;
+			margin-left: 15px;
+
+			&.select {
+
+			}
+
+			&.error {
+				> a {
+					border: 1px solid #ff0000 !important;
+				}
+			}
+
+			// Selected option in selectbox
+			> a {
+				border: 1px solid #a0a0a0;
+				background-image: url('/assets/img/icons/dropdown-trigger-grey.jpg');
+				min-height: 36px;
+				line-height: 36px;
+				padding-top: 0 !important;
+				padding-bottom: 0 !important;
+			}
+
+			// All options
+			a {
+				text-align: center;
+				padding: 8px 24px 8px 12px;
+				// padding: ~'0px 24px 0px 12px\9';
+				color: #00284a;
+				font-size: 13px;
+				font-weight: normal;
+			}
+
+			// List with options
+			.select-list {
+				border: 1px solid #a0a0a0;
+				margin-top: -3px;
+				// Option
+				.select-list-item {
+					border-top: 1px solid #a0a0a0;
+					&:first-child {
+						border: 0;
+					}
+
+					a {
+						padding: 8px 24px 8px 12px;	
+					}
+
+					&:hover,
+					&.select-list-item-selected {
+						background: #0093d0;
+						a {
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+
+		// File input styles
+		input[type='file'] {
+			padding: 0;
+			// padding: ~'5px 10px 5px 10px\9';
+			border: 0;
+			margin-top: 10px;
+			width: auto;
+			&.active {
+				margin-left: 0;
+				&::-webkit-file-upload-button {
+					-webkit-appearance: none;
+					outline: none;
+					border: none;
+					color: transparent;
+					background: transparent;
+					width: 0;
+				}
+				&.webkit {
+					margin-left: -15px;
+				}
+			}
+		}
+
+		.remove-file {
+			display: block;
+			width: 12px;
+			height: 11px;
+			position: absolute;
+			right: 30px;
+			// right: ~'15px\9';
+			top: 15px;
+			// top: ~'18px\9';
+			background: url('/assets/img/icons/remove-field.png');
+			cursor: pointer;
+		}
+		// ================ //
+
+		select[name*="country"] + div {
+			margin: 0;
+		}
+
+		// Last is wider
+		select[name*="[year]"] + div {
+			width: 115px;
+		}
+
+		// First without margin
+		select[name*="[day]"] + div {
+			margin: 0;
+		}
+
+		// Current work place label is lower then others
+		label[for*="currentJob"],
+		label[for*="currentEducation"] {
+			margin-top: 30px;
+			input {
+				display: inline-block;
+				width: 12px;
+				margin-left: 20px;
+				position: relative;
+				top: -2px;
+			}
+		}
+
+		&.period {
+			.divider-span {
+				float: left;
+				margin: 0 0 0 13px;
+				display: block;
+				font-size: 33px;
+				padding-top: 5px;
+			}
+
+			.select {
+				width: 60px;
+				margin: 0 0 0 13px;
+			}
+
+
+			select[name*="fromMonth"] + div {
+				margin-left: 0;
+			}
+
+			select[name*="tillYear"] + div,
+			select[name*="fromYear"] + div,
+			select[name*="tillYear"] + div,
+			select[name*="fromYear"] + div {
+				width: 75px;
+			}
+		}
+	}
+
+	.add-file,
+	.add-file-input {
+		letter-spacing: normal;
+		text-decoration: underline;
+		cursor: pointer;
+		display: block;
+		margin-top: 20px;
+		color: #9c6a00;
+	}
+
+	// File input field
+	.diploma .pure-u-2-5 {
+		position: relative;
+	}
+
+	// Remove field button
+	.remove {
+		display: block;
+		width: 12px;
+		height: 12px;
+		position: absolute;
+		left: -30px;
+		top: 19px;
+		background: url('/assets/img/icons/remove-field.png');
+		cursor: pointer;
+	}
+
+	// Language skill dropdown is wider then the others
+	.language-skill > div {
+		width: 100% !important;
+		margin-left: 0 !important;
+		.select-item {
+			background-position: 96% 55% !important;
+		}
+	}
+
+
+	label,
+	input {
+		display: block;
+		width: auto;
+		color: #00284a;
+		font-size: 13px;
+		line-height: 15px;
+	}
+
+	label {
+		margin-bottom: 5px;
+		// width: auto;
+	}
+
+	input {
+		border: 1px solid #a0a0a0;
+		padding: 8px 12px;
+		&.error {
+			border: 1px solid #c90000;
+		}
+	}
+
+	.add {
+		display: inline-block;
+		margin-top: 20px;
+		text-decoration: underline;
+		color: #9c6a00;
+		cursor: pointer;
+		&:hover {
+			color: #9c6a00;
+			text-decoration: none;
+		}
+	}
+
+	hr {
+		height: 1px;
+		width: 100%;
+		background: #E4E4E4;
+		border-top: 1px solid #fff;
+		margin: 30px 0;
+	}
+
+	label[for*="duties"] {
+		letter-spacing: normal;
+	}
+
+	textarea[id*="duties"] {
+		width: 715px;
+		border: 1px solid #a0a0a0;
+		// .box-sizing(border-box);
+		padding: 10px;
+		&+.error {
+			left: 102% !important;
+		}
+	}
+}
+
+.no-js form .invisible {
+	display: inline-block !important;
+	position: static !important;
+	left: auto !important;
+	width: auto !important;
+}
+
+.mandatory-description {
+	margin-top: 20px;
+	display: inline-block;
+	width: 88%;
+	text-align: right;
+	width: 620px;
+}
+
+.pure-u-2-5.error input,
+.pure-u-2-5.error .select > a,
+.pure-u-5-5.error textarea {
+	border: 1px solid #ff0000 !important;
+}
+div.error {
+	position: relative;
+}
+
+
+
+span.error,
+label.error {
+	position: absolute;
+	z-index: 1;
+	color: #c90000;
+	text-align: center;
+	letter-spacing: normal;
+	display: inline-block;
+	right: 0;
+	top: 0px;
+}
+
+div.select span.error,
+div.select label.error {
+	top: 0px;
+	left: 114%;
+}
+
+// Response messages
+.success-msg,
+.error-msg,
+.error-msg div,
+.success-msg div {
+	font-size: 18px;
+	font-weight: 400;
+	text-align: center;
+	margin: 50px 0 !important;
+}
+.success-msg,
+.success-msg div {
+	color: #2197d4;
+	&:before {
+		content: ' ';
+		width: 18px;
+		height: 14px;
+		display: inline-block;
+		margin-right: 10px;
+		background-image: url('/assets/img/icons/form-success.png');
+		background-repeat: no-repeat;
+		background-position: 50%;
+		position: relative;
+		vertical-align: middle;
+		top: -1px;
+	}
+	&.supra:before {
+		display: none;
+	}
+}
+.error-msg,
+.error-msg div {
+	color: #724c01;
+}
+
+.invalid-file-error,
+.invalid-dates-error {
+	margin-top: 2px;
+	color: #c90000;
+}
+
+.invalid-dates-error {
+	position: absolute;
+	top: 140px;
+}
+
+.add + .pure-g.diploma {
+	margin-top: 30px;
+}
+
+.pure-g.diploma {
+	margin: 0;
+	.pure-u-2-5 {
+		margin: 0;
+	}
+}
+
+// Modal when leaving unsubmitted form
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgb(255,255,255);
+	z-index: 8;
+	top: 0;
+	display: none;
+	opacity: .7;
+
+}
+
+.modal {
+	width: 662px;
+	height: 282px;
+	position: fixed;
+	margin: 0;
+	padding: 85px 190px;
+	z-index: 9;
+	text-align: center;
+	left: 139px;
+	display: none;
+
+	.message,
+	.message+div:not(.btn) {
+		color: #2197d4;
+		font-size: 18px;
+		font-weight: 400;
+		text-align: center;
+		margin-bottom: 35px;
+		line-height: 25px;
+	}
+
+	.btn {
+		text-transform: uppercase;
+		width: 120px;
+		height: 45px;
+		text-align: center;
+		font-size: 12px;
+		line-height: 45px;
+		font-weight: 400;
+		cursor: pointer;
+		padding: 0;
+		margin-top: 0;
+		
+		&:hover {
+			color: #fff;	
+		}
+
+		&.gray {
+			height: 43px;
+			margin-right: 20px;
+		}
+	}
+}
+
+.supra-cms .modal {
+	display: block;
+	position: static;
+	margin: auto;
+
+	p {
+		margin-bottom: 0;
+	}
+}
+
+form fieldset {
+	-webkit-tap-highlight-color: rgba(0,0,0,0)
+}

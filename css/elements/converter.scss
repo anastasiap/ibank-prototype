@@ -1,0 +1,60 @@
+.converter {
+	display: inline-block;
+	margin-top: 30px;
+	padding: 20px;
+	background-color: #f2eee3;
+	color: #424242;
+	font-size: 12px;
+	width: 550px;
+	/* .box-sizing(border-box); */
+	
+	h4 {
+		// font-weight: normal;
+		text-transform: uppercase;
+		color: #9c6a00;
+		margin-bottom: 20px;
+	}
+	
+	input {
+		border: 1px solid #9c6a00;
+		font-size: 12px;
+		color: #9c6a00;
+		width: 120px;
+		padding: 3px 8px;
+		text-align: center;
+	}
+	
+	.converter-text {
+		color: #424242;
+		font-size: 13px;
+	}
+
+	.for {
+		margin: 0 20px 0 10px;
+		font-size: 12px;
+	}
+	
+	.result {
+		strong {
+			min-width: 50px;
+			display: inline-block;
+		}
+	}
+
+	.rate {
+		display: block;
+		margin-top: 20px;
+	}
+
+	// Correct render in CMS
+	.for div,
+	.result div {
+		display: inline-block;
+	}
+	
+	
+	select[name="from"] + div {
+		margin-left: 5px;
+		
+	}
+}

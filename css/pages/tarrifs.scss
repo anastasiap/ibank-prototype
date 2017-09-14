@@ -1,0 +1,99 @@
+.cost-rates {
+
+	/**
+	 * Cost rates table
+	 */
+	table {
+		tr {
+			td, th {
+				padding-left: 14px;
+				background: #fff;
+			}
+
+			&:first-child {
+				td, th {
+					font-weight: 300;
+				}
+			}
+			
+			.group-row {
+				font-weight: bold;
+				padding-left: 5px;
+			}
+		}
+		
+		margin-bottom: 20px;
+	}
+}
+
+/**
+ * List of cost rates in archive
+ */
+.tarrifs-archive {
+
+	margin: 0 0 30px 0;
+
+	li {
+		margin-top: 25px;
+		
+		&:first-child {
+			margin-top: 0;
+		}
+		a {
+			color: #2093d2;
+			font-size: 13px;
+			text-decoration: underline;
+		}
+	}
+}
+
+/**
+ * Footer with notes link and "active from" link
+ */
+ .archive-footer {
+	margin-top: 40px;
+
+	/* .box-sizing(border-box); */
+	
+	.active-from div,
+	.active-from {
+		display: inline-block;
+		color: #80b0ca;
+		font-size: 13px;
+		font-weight: 300;
+		margin-right: 30px;
+	}
+
+	.notes {
+		color: #446e85;
+		margin: 20px 0;
+	}
+
+	a {
+		font-size: 13px;
+		color: #2193d0;
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+			color: #2193d0;
+		}
+
+		&:visited {
+			color: #6d94a9;
+		}
+	}
+}
+
+// Correct rendering for CMS
+.supra-cms .archive-footer {
+	
+	.active-from div {
+		margin: 0;
+	}
+	
+	.notes+div {
+		color: #446e85;
+		margin: 20px 0;
+	}
+}

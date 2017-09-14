@@ -1,0 +1,59 @@
+.service-footer {
+	margin-top: 25px;
+
+	h3 + ul {
+		margin-bottom: 20px;
+	}
+
+	h3 + .documents ul,
+	h3 + ul {
+		li {
+			margin-top: 15px;
+			&:first-child {
+				margin-top: 0;
+			}
+			
+			a {
+				color: #2093d2;
+				font-size: 13px;
+				text-decoration: underline;
+
+				&:hover {
+					text-decoration: none;
+				}
+
+				&:before {
+					margin-right: 10px;
+					width: 14px;
+				}
+
+				&:visited {
+					color: #6d94a9;
+				}
+			}
+		}
+	}
+
+	.cost-rates-list {
+		li:before {
+			content: ' ';
+			display: inline-block;
+			margin-right: 5px;
+			width: 19px;
+			height: 18px;
+			background-image: url('../assets/img/icons/tarrifs.png');
+			vertical-align: middle
+		}
+	}
+}
+
+.accordion-wrapper {
+
+	h3 {
+		cursor: pointer;
+	}
+
+	.inner {
+		display: none;
+	}
+}

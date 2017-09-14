@@ -1,0 +1,60 @@
+.accordion {
+	.title {
+		display: inline-block;
+		color: #00284a;
+		font-size: 13px;
+		text-transform: uppercase;
+		margin: 10px 0;
+		cursor: pointer;
+
+		// Icons
+		&:before {
+			content: ' ';
+			width: 15px;
+			height: 15px;
+			background: url('../assets/img/icons/accordion-icons.png');
+			background-position: 0 0;
+			margin-right: 15px;
+			display: inline-block;
+			position: relative;
+			top: 2px;
+		}
+
+		&.expand:before {
+			background-position: 0 100%;
+		}
+	}
+
+	.inner {
+		display: none;
+		padding-left: 27px;
+		margin-top: 10px;
+	}
+
+
+	.btn,
+	.btn div {
+		margin-top: 0;
+		margin-bottom: 10px;
+
+		&:hover,
+		&:active, {
+			color: #fff;
+		}
+	}
+}
+
+.vacancy-note {
+	margin-top: 25px;
+	padding: 23px 27px;
+	border: 1px dashed #cecfcf;
+
+	p {
+		margin-bottom: 25px;
+	}
+
+	.btn:hover,
+	.btn:hover div {
+		color: #fff;
+	}
+}

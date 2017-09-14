@@ -1,0 +1,86 @@
+.left.banner {
+	width: 700px;
+	height: 350px !important;
+	display: inline-block;
+	vertical-align: top;
+	ul li {
+		position: relative;
+		.text-box {
+			position: absolute;
+			top: 40px;
+			left: 30px;
+			width: 50%;
+			
+			h2 {
+				color: #0093d0;
+				font-size: 30px;
+			}
+			
+			p {
+				color: #505050;
+				font-size: 20px;
+				line-height: 23px;
+			}
+		}
+	}
+	 
+	.dots {
+		position: absolute;
+		left: 30px;
+		bottom: 20px;
+		z-index: 9;
+		li {
+			margin: 0 5px;
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			color: transparent;
+			background-color: #bababa;
+			cursor: pointer;
+			vertical-align: middle;
+			&.active {
+				background-color: #ffc900;
+				width: 20px;
+				height: 20px;
+			}
+		}
+	}	
+}
+
+
+.landing-banners {
+	margin-bottom: 20px;
+}
+.landing-banners .right figure {
+	width: 220px;
+	height: 164px;
+}
+
+
+.right {
+	display: inline-block;
+	figure {
+		position: relative;
+		display: block;
+		&:first-child {
+			margin-bottom: 22px;
+		}
+		.text-box {
+			position: absolute;
+			height: 100%;
+			top: 20px;
+			left: 20px;
+			width: 60%;
+			h4 {
+				font-size: 14px;
+				line-height: 17px;
+				color: #0093d0;
+				font-weight: 400;
+			}
+			a {
+				position: absolute;
+				bottom: 37px;
+			}
+		}
+	}
+}

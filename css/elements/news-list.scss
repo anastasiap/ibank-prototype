@@ -1,0 +1,92 @@
+.news-block {
+	margin-bottom: 25px; // Margin to separate with footer
+	padding-bottom: 5px; // Padding from nav icons to the border
+	overflow: hidden;
+	h4 a,
+	h4 a > div {
+		font-size: 13px;
+		color: #00284a;
+		text-transform: uppercase;
+	}
+	
+	.news-banner {
+		height: 157px;
+		position: relative;
+		overflow: hidden;
+		>ul {
+			height: 157px;
+			position: absolute;
+			left: 0;
+			top: 0;		
+			>li {
+				float:left;
+				width: 940px;
+				ul {
+					li {
+						display: inline-block;
+						width: 300px;
+						margin-left: 20px;
+						float: left;
+						&:first-child {
+							margin: 0;
+						}
+						h5 {
+							padding: 10px 10px 5px 10px;
+							border-bottom: 1px dashed #cecfcf;
+							a {
+								font-size: 13px;
+								color: #2093d2;
+								vertical-align: bottom;
+								font-weight: 400;
+							}
+						}
+						
+						.date {
+							padding-top: 10px;
+							padding-left: 10px;
+							color: #b0b0b0;
+							font-size: 13px;
+						}
+					}	
+				}
+			}
+		}
+	}
+	.arrows {
+		position: absolute;
+		bottom: 0px;
+		right: 0;
+		z-index: 99;
+		
+		.prev,
+		.next {
+			background-image: url('..assets/img/icons/arrows.png');
+			width: 28px;
+			height: 28px;
+			display: inline-block;
+			cursor: pointer;
+		}
+		
+		.next {
+			background-position: 0 88px;
+			&:hover {
+				background-position: 0 100%;	
+			}
+		}
+		
+		.prev {
+			margin-right: 10px;
+			background-position: 0 118px;
+			&:hover {
+				background-position: 0 58px;	
+			}
+		}
+	}
+}
+
+.intro-text {
+	padding-left: 10px;
+	color: #003164;
+	font-size: 13px;
+	line-height: 1.4em;
+}

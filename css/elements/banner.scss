@@ -1,0 +1,197 @@
+/**
+ * Usefull mixin for this page
+ */
+/* .overlay(@width, @z-index) {
+	width: @width;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: @z-index;
+}
+ */
+.banner {
+	position: relative;
+	box-shadow:0 1px 3px 0px rgba(0, 0, 0, 0.7);
+	img {
+		vertical-align: top; // Removing extra space from the bottom
+	}
+	// Blue border on the left
+	&:before {
+		content: ' ';
+		background-image: url('../assets/img/left-side-border.png');
+		background-size: cover;
+		/* .overlay(4px, 99); */
+	}
+}
+
+.small-banner-wrapper {
+	margin-bottom: 30px;
+}
+
+.with-blue-border {
+	position: relative;
+	overflow: hidden;
+		
+	&.full-width {
+		height: 138px;
+		width: 100%;
+		margin-bottom: 30px;
+	
+		/**
+		 * Full width banner image vertical align 
+		 */
+		
+		.image-wrapper {
+			font-size: 0;
+			height: 100%;
+		}
+
+		.image-valign {
+			position: absolute;
+			left: -1px;
+			top: 50%;
+			height: 10000px;
+			margin-top: -5000px;
+			white-space: nowrap;
+
+			span {
+				width: 1px;
+				height: 10000px;	
+			}
+
+			img, span {
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+
+	}
+	
+	&.tile img {
+		width: auto;
+		height: 100%;
+	}
+	
+	img {
+		width: 100%;
+		height: auto;
+		vertical-align:top;
+	}
+	// Blue border on the left
+	&:before {
+		content: ' ';
+		background-image: url('../assets/img/left-side-border.png');
+		/* .background-size(contain);
+		.overlay(4px, 99); */
+	}
+}
+
+
+// Decorative color stripes 
+/* .color-stripes {
+	.overlay(100%, 0);	
+} */
+
+// Decorative white gradient
+.gradient {
+	/* .overlay(100%, 0); */
+	background-repeat: no-repeat;
+}
+
+/**
+ * Read more link
+ */
+.read-more {
+	position: relative;
+	z-index: 3;
+}
+
+/**
+ * Full size transparent link
+ */
+/* .full-width {
+	.overlay(100%, 3);	
+}
+ */
+
+/**
+ * Big slider banner on landing
+ * with two right-side banners
+ */
+.landing-banners {
+	
+	/**
+	 * Big slider
+	 */
+	.landing {
+		z-index: 1;
+
+		.gradient-landing-banner {
+			background-image: url('../assets/img/white-shadow/big-banner-gradient.png');
+		}
+
+		.color-stripes {
+			background-image: url('../assets/img/color-stripes/lpb-home-big_banner.png');
+			opacity: 0.2;		 
+		}
+	}
+	
+	/**
+	 * Small banners on the right
+	 */
+	.right {
+		.banner {
+			.gradient {
+				background-image: url('../assets/img/white-shadow/landing-small.png')
+			}
+		}
+	}
+
+}
+
+
+/**
+ * Banner with link to the client register form
+ */
+.small-banner-wrapper {
+	box-shadow:0 1px 3px 0px rgba(0, 0, 0, 0.7);
+	max-height: 145px;
+	
+	.gradient {
+		background-image: url('../assets/img/white-shadow/side-banner.png');
+	}
+}
+
+/**
+ * For two horizontally aligned big banners 
+ */
+.become-a-client .inner .gradient {
+	background-image: url('../assets/img/white-shadow/became-a-client.png');
+}
+
+/**
+ * 
+ */
+.bottom .small .gradient {
+	background-image: url('../assets/img/white-shadow/anketa.png');
+	width: 100%;
+	left: 10px;
+}
+
+
+// CMS Media gallery view 
+
+.supra-cms {
+	a.full-width {
+		display: none;
+	}
+	
+	.left.banner {
+		height: auto !important;
+	}
+	
+	.banner ul li {
+		height: 350px !important;
+	}
+}

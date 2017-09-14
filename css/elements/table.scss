@@ -1,0 +1,237 @@
+#su-style-dropdown table.simple[title="No styles"] { color: #333; }
+
+#su-style-dropdown td.group-row[title="Group row"] { color: #333; }
+#su-style-dropdown th.group-row[title="Group row"] { color: #333; }
+
+#su-style-dropdown td.table-heading[title="Table heading"] { color: #333; }
+#su-style-dropdown th.table-heading[title="Table heading"] { color: #333; }
+
+table {
+	width: 100%;
+	tr {
+		/* background: #fafafa; */
+		border-bottom: 1px solid #c6c6c6;
+		
+		// For modern browsers
+		&:nth-child(odd) {
+			/* background: #fff; */	
+		}
+		
+		// For older browsers
+		&.no-border {
+			border-bottom: none;	
+		}
+		
+		&:first-child {
+			/* background: #deebf0; */
+			border-bottom: none;	
+			th, td {
+				/* font-weight: bold; */
+				position: relative;
+
+				&:before {
+					content: ' ';
+					width: 1px;
+					height: 18px;
+					background: #b2bcc0;
+					border-right: 1px solid #f5f9fb;
+					display: inline-block;
+					position: absolute;
+					left: 0;
+					top: 50%;
+					/* .transform(translateY(-50%)); */
+				}
+				
+				&:first-child {
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}
+		
+		&.light {
+			background: #fff;
+		}
+		
+		td, th {
+			color: #446e85;
+			padding: 10px 0;
+			vertical-align: middle;
+
+			&.group-row {
+				font-weight: bold !important;
+				background: #ededed !important;
+			}
+			
+			// No shadow is needed when img is in table
+			img {
+				/* .box-shadow(none);	 */
+			}
+			
+			&.top {
+				vertical-align: top;	
+			}
+			
+			// Same color as rows
+			p {
+				.text &,
+				.service-price-list & {
+					color: #446e85;
+				}
+			}
+			
+			// Semi bold for <b>
+			b {
+				font-weight: 700;
+			}
+		}
+		
+	}
+}
+
+table.simple {
+	tr:first-child th:before,
+	tr:first-child td:before {
+		display: none;
+	}
+	tr, th, td {
+		background: none;
+		border: 0;
+	}
+}
+
+.no-styles {
+	width: 100%;
+	tr {
+		border: none;
+		
+		&:first-child {
+			td {
+				padding-top: 0;
+			}
+		}
+		
+		td {
+			background: #fff;
+			border: none;
+			width: auto;
+			vertical-align: middle;
+			padding-left: 30px;
+			padding-top: 30px;
+			
+			&:before {
+				display: none !important;
+			}
+			
+			img {
+				width: auto;
+				/* .box-shadow(none);	 */
+			}
+			
+			&:first-child {
+				padding-left: 0px;
+				// text-align: center;
+			}
+			
+			b {
+				font-weight: bold;
+			}
+		}
+		
+		.description {
+			width: 280px;
+			vertical-align: top;
+		}
+		
+		.adress {
+			width: 160px;
+			vertical-align: top;
+		}
+		
+		.logo {
+			text-align: left !important;
+			a {
+				color: #446e85;
+				img {
+					max-width: 160px;
+					height: auto;
+				}
+			} 
+		}
+	}
+}
+
+.fixed-cell {
+	td {
+		width: 220px;
+	}
+}
+
+.exchange-rates .row {
+	
+	td {
+		&:first-child {
+			padding-left: 50px;
+			padding-right: 50px;
+			text-align: left;
+		}
+
+		text-align: right;
+		padding-right: 100px;
+	}
+}
+
+.exchange-rates-labels {
+	text-align: center;
+}
+
+.service-price-list {
+
+	table.rates {
+		tr {
+			background: #fff;
+		}
+	}
+
+	tr:first-child {
+		td, th {
+			background: #fff;
+			border-bottom: 1px solid #c6c6c6;
+			&:before {
+				display: none;
+			}
+		}
+	}	
+	
+	td, th {
+		padding: 10px;
+	}
+
+}
+
+.content table tr td.table-heading,
+.content table tr tr.table-heading {
+	background: #deebf0;
+	border-bottom: 0; 
+	position: relative;
+	font-weight: bold;
+	text-align: center;
+
+	&:before {
+		content: ' ';
+		width: 1px;
+		height: 18px;
+		background: #b2bcc0;
+		border-right: 1px solid #f5f9fb;
+		display: inline-block;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		/* .transform(translateY(-50%)); */
+	}
+
+	&:first-child:before {
+		display: none;
+	}
+}

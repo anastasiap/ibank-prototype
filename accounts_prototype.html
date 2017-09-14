@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width initial-scale=1 shrink-to-fit=no">
+		<title>iBank</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/jquery-ui.min.css" rel="stylesheet">
+		<link href="css/select2.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.min.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+	<div class="site-wrapper" data-require="plugins/scrollNav">
+		<div class="mobile-sidebar">
+			<div class="mobile-sidebar-nav">
+				<div class="mobile-profile">
+					<ul class="lang">
+						<li><a href="#" class="active">LAT</a></li>
+						<li><a href="#">RUS</a></li>
+						<li><a href="#">ENG</a></li>
+					</ul>
+					<ul>
+						<li><a href="0305_settings-profile.php" class="navbar-link"><span class="glyphicon glyphicon-user"></span>Vasilij Pupkin. CIF A75000</a></li>
+						<li><a href="0301_inbox.php" class="navbar-link"><span class="glyphicon glyphicon-envelope"></span>4 новых сообщения</a></li>
+						<li><a href="0102_mobile-advanced-search.php" class="navbar-link"><span class="glyphicon glyphicon-search"></span>Поиск</a></li>
+					</ul>
+				</div>
+				<ul class="mobile-main-nav">
+					<li>
+						<form class="navbar-form">
+							<select class="form-control clients-select">
+								<option>Все клиенты</option>
+								<option>DUBULTAIS IERAKSTS SABIEDRĪBA AR IEROBEŽOTU ATBILDĪBU</option>
+								<option>Vasilij Pupkin</option>
+							</select>
+						</form>
+					</li>
+					<li>
+						<form class="navbar-form">
+							<select class="form-control clients-select">
+								<option value="accounts">Состояние счетов</option>
+								<option value="form-statement">Выписка</option>
+							</select>
+						</form>
+					</li>
+					<li>
+						<form class="navbar-form">
+							<select class="form-control clients-select">
+								<option value="payments">Список распоряжений</option>
+								<option value="payments">Все</option>
+								<option value="payments#new">Новые</option>
+								<option value="payments#sent">Отправленные</option>
+								<option value="payments#processed">Исполненные</option>
+								<option value="payments#declined">Отмененные</option>
+							</select>
+						</form>
+					</li>
+					<li>
+						<form class="navbar-form">
+							<select class="form-control clients-select">
+								<option value="payments">Банковские операции</option>
+								<option value="templates">Шаблоны</option>
+								<option value="operation-home">По Латвии</option>
+								<option value="operation-currency">Валютное</option>
+								<option value="operation-budget">Бюджетное</option>
+								<option value="operation-lpb">Внутрибанковское</option>
+								<option value="operation-accounts">Между своими счетами</option>
+								<option value="operation-cash">Выплата наличных</option>
+								<option value="operation-exchange">Конвертация</option>
+								<option value="operation-deposit">Депозит</option>
+								<option value="payment-import">Импорт платежей</option>
+							</select>
+						</form>
+					</li>
+					<li>
+						<form class="navbar-form">
+							<select class="form-control clients-select">
+								<option value="inbox">Банковские сообщения</option>
+								<option value="inbox#sent">Исходящие сообщения</option>
+								<option value="inbox#send">Послать сообщение</option>
+							</select>
+						</form>
+					</li>
+					<li>
+						<form class="navbar-form">
+							<select class="form-control clients-select">
+								<option value="settings-view">Настройки</option>
+								<option value="settings-view">Настройки показа счетов</option>
+								<option value="cards">Настройки платежных карт</option>
+								<option value="settings-import">Формат платежа импорта</option>
+								<option value="settings-profile">Настройки профиля</option>
+								<option value="settings-password">Изменение пароля</option>
+								<option value="logbook">История заходов в систему</option>
+							</select>
+						</form>
+					</li>
+				</ul>
+				<div class="logout">
+					<ul>
+						<li><a href="index.php">Выйти<span class="glyphicon glyphicon-log-out"></span></a></li>	
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="main-wrapper container">
+			<div class="info-bar"><span class="glyphicon glyphicon-exclamation-sign"></span><span class="warning">Обновите документы</span></div>
+			<div class="auth-timer">
+				<div class="animated yt-loader hide-el"></div>
+			</div>
+			<header class="header navbar">
+				<div class="row">
+					<address class="print-only small pull-right text-right">
+						<span>Adrese: Brīvības iela 54, Rīga, LV-1011</span>
+						<span>Tālrunis: (+371) 6 777 2 999</span>
+						<span class="mail">E-pasts: info@lpb.lv</span>
+					</address>
+					<div class="col-sm-6 col-sm-12">
+						<div class="logo"><a href="0100_accounts.php"><img src="img/logo_vi.png"></a></div>
+					</div>
+					<div class="col-sm-6 col-sm-12">
+						<ul class="lang hidden-xs">
+							<li><a href="#">LV</a></li>
+							<li><a href="#" class="active">RU</a></li>
+							<li><a href="#">EN</a></li>
+						</ul>
+						
+						<ul class="lang user-info hidden-xs">
+							<li><a href="0301_inbox.php" class="text-danger"><span class="glyphicon glyphicon-envelope"></span>4 новых сообщения</a></li>
+							<!-- <li><a href="0301_inbox.php"><span class="glyphicon glyphicon-envelope"></span>Банковские сообщения</a></li> -->
+							<li><a href="0305_settings-profile.php">Vasilij Pupkin. CIF A75000</a></li>
+							<li><a href="index.php">Выйти<span class="glyphicon glyphicon-log-out"></span></a></li>
+						</ul>
+						
+					</div>
+				</div>
+			
+				
+					
+					<a href="#menu-toggle" class="btn" id="menu-toggle" data-require="plugins/toggleMenu">
+						<button type="button" class="navbar-toggle collapsed">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</a>
+					<nav class="upper-menu hidden-xs">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-sm-3">
+									<form class="navbar-form navbar-right">
+										<select class="form-control clients-select" value="Все клиенты" data-native-menu="false">
+											<option>Все клиенты</option>
+											<option>DUBULTAIS IERAKSTS SABIEDRĪBA AR IEROBEŽOTU ATBILDĪBU</option>
+											<option>Vasilij Pupkin</option>
+										</select>
+									</form>
+								</div>
+								<div class="col-sm-7">
+									<ul>
+										<li class="accounts active"><a href="0100_accounts.php"><span class="glyphicon glyphicon-th-large"></span>Состояние счетов</a></li>
+										<li class="payments"><a href="0200_payments.php"><span class="glyphicon glyphicon-file"></span>Банковские операции</a></li>
+									</ul>
+								</div>
+								<div class="col-sm-2">
+									<ul class="navbar-right"> 
+										<li class="profile dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-folder-close"></span>Профиль <span class="caret"></span></a>
+											<ul class="dropdown-menu" role="menu">
+												<li><a href="0301_inbox.php">Банковские сообщения<span class="badge">4</span></a></li>
+												<li class="divider"></li>
+												<li><a href="0302_settings-view.php">Настройки показа счетов</a></li>
+												<li><a href="0303_settings-cards.php">Настройки платежных карт</a></li>
+												<li><a href="0304_settings-import.php">Формат платежа импорта</a></li>
+												<li class="divider"></li>
+												<li><a href="0305_settings-profile.php">Настройки профиля</a></li>
+												<li><a href="0306_settings-password.php">Изменение пароля</a></li>
+												<li><a href="0307_settings-logbook.php">История заходов в систему</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+							
+						</div>
+					</nav>
+			</header>
+			<main role="main">
+				<div class="row">
+ 					<aside class="col-sm-3 col-xs-12">
+						<div class="sidebar-nav side-menu hidden-xs">
+							<div class="form-wrapper">
+								<h4>Выписка</h4>
+								<form action="" class="accounts" method="post">
+									<div class="form-group">
+										<select class="form-control" multiple="multiple" data-target="multi-select" style="width: 100%">
+						    				<option></option>
+						    				<option value="LV79LAPB0000006065051"><span class="item-number">LV79LAPB0000006065051</span> - 28987123.34 Eur</option>
+						    				<option value="LV87LAPB0000067607333"><span class="item-number">LV87LAPB0000067607333</span> - 8987.34 Eur</option>
+						    				<option value="LV87LAPB0000067607334"><span class="item-number">LV87LAPB0000067607334</span> - 8987.34 Eur</option>
+						    				<option value="LV87LAPB0000067607335"><span class="item-number">LV87LAPB0000067607335</span> - 8987.34 Eur</option>
+						    				<option value="LV87LAPB0000067607336"><span class="item-number">LV87LAPB0000067607336</span> - 8987.34 Eur</option>
+						    				<option value="LV87LAPB0000067607338"><span class="item-number">LV87LAPB0000067607338</span> - 8987.34 Eur</option>
+						    				<option value="LV87LAPB0000067607339"><span class="item-number">LV87LAPB0000067607339</span> - 8987.34 Eur</option>
+						    				<option value="LV87LAPB0000067607340"><span class="item-number">LV87LAPB0000067607340</span> - 8987.34 Eur</option>
+						    				<option value="LV87LAPB0000067607341"><span class="item-number">LV87LAPB0000067607341</span> - 8987.34 Eur</option>
+										</select>
+									</div>
+									<div class="form-group langs">
+										<select class="form-control">
+											<option>Русский</option>
+											<option>Латышский</option>
+											<option>Английский</option>
+										</select>
+									</div>
+									<div class="form-group clearfix">
+										<label class="control-label">Период</label>
+										<div class="input-group">
+											<input class="form-control data-from datepicker" type="text" name="date" data-require="plugins/datepicker-init" data-attach="$.fn.Datepicker" />
+											<input class="form-control data-to datepicker" type="text" name="date" data-require="plugins/datepicker-init" data-attach="$.fn.Datepicker" />
+										</div>
+									</div>
+						    		<div class="radio">
+										<label><input type="radio" />С начала недели</label>
+										<label><input type="radio" />Прошедшая неделя</label>
+										<label><input type="radio" />С начала месяца</label>
+										<label><input type="radio" />Предыдущий месяц</label>
+									</div>
+									<div class="btn-toolbar" role="toolbar" aria-label="action-bts">
+										<div class="btn-group" role="group" aria-label="send-payment">
+									        <button type="submit" class="btn btn-sm btn-primary">Отправить</button>
+									    </div>
+								    </div>
+								    <div class="clearfix"></div>
+								</form>
+							</div>
+						</div>
+					</aside>
+
+					<div class="col-sm-9 col-xs-12">
+						<div class="content-wrapper accounts-wrapper">
+							<h3>A09344</h3>
+							<div class="table-responsive">
+								<table class="table table-hover table-condensed">
+									<thead class="theader">
+										<tr>
+											<td colspan="8"><h4 class="table-title">Рассчетные и карточные счета</h4></td>
+										</tr>
+										<tr>
+											<th></th>
+											<th class="item-number">Название / Счет </th>
+											<th class="cell-amount">Валюта</th>
+											<th class="item-type">Тип счета</th>
+											<th class="cell-amount">Текущий остаток</th>
+											<th class="cell-amount">Зарезервированная сумма</th>
+											<th class="cell-amount">Доступный остаток</th>
+											<th class="cell-amount">Доступный овердрафт</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="main-account">
+											<td><input type="checkbox" class="account-checkbox" value="LV79LAPB0000006065051" /></td>
+											<td class="item-number">
+												<a href="0101_statement.php" data-account="number">LV79LAPB0000006065051 (main account 1)</a>
+											</td>
+											<td>EUR</td>
+											<td class="item-type">Рассчетный счет</td>
+											<td>3.83</td>
+											<td><a href="0104_reserved.php">11.09</a></td>
+											<td>5.62</td>
+											<td>N/A</td>
+										</tr>
+										<tr class="main-account multi-currency">
+											<td><input type="checkbox" class="account-checkbox" value="LV87LAPB0000067607333" /></td>
+											<td class="item-number"><a href="0101_statement.php" data-account="number">LV87LAPB0000067607333</a></td>
+											<td>EUR</td>
+											<td class="item-type">Рассчетный счет</td>
+											<td>3.83</td>
+											<td>0.00</td>
+											<td>5.62</td>
+											<td>10000</td>
+										</tr>
+										<tr class="sub-account">
+											<td><input type="checkbox" class="account-checkbox" value="LV87LAPB0000067607334"></td>
+											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607334</a></td>
+											<td>USD</td>
+											<td class="item-type"></td>
+											<td>100024.83</td>
+											<td>0.00</td>
+											<td>0.00</td>
+											<td>N/A</td>
+										</tr>
+										<tr class="sub-account">
+											<td><input type="checkbox" class="account-checkbox" value="LV87LAPB0000067607335"></td>
+											<td class="item-number closed-account" data-account="number">LV87LAPB0000067607335 / Закрыт</td>
+											<td>LTL</td>
+											<td class="item-type"></td>
+											<td>0.00</td>
+											<td>0.00</td>
+											<td>0.00</td>
+											<td>N/A</td>
+										</tr>
+										<tr class="main-account multi-currency">
+											<td><input type="checkbox" class="account-checkbox" ></td>
+											<td class="item-number"><a href="0101_statement.php" data-account="number">LV87LAPB0000067607333</a></td>
+											<td>EUR</td>
+											<td class="item-type">Карточный счет</td>
+											<td>5.62</td>
+											<td>0</td>
+											<td>3.83</td>
+											<td>N/A</td>
+										</tr>
+										<tr class="sub-account">
+											<td><input type="checkbox" class="account-checkbox" ></td>
+											<td class="item-number"><a href="0101_statement.php" data-account="number">LV87LAPB0000067607333</a></td>
+											<td>USD</td>
+											<td class="item-type"></td>
+											<td>5.62</td>
+											<td>0</td>
+											<td>3.83</td>
+											<td>N/A</td>
+										</tr>
+										<tr class="sub-account">
+											<td><input type="checkbox" class="account-checkbox" ></td>
+											<td class="item-number"><a href="0101_statement.php" data-account="number">LV87LAPB0000067607333</a></td>
+											<td>RUB</td>
+											<td class="item-type"></td>
+											<td>5.62</td>
+											<td>0.00</td>
+											<td>3.83</td>
+											<td>N/A</td>
+										</tr>
+										<tr class="card-details">
+											<td></td>
+											<td colspan="7">
+												<div class="pull-left">
+													<img src="img/visa.png" alt="Visa" title="Card">
+													<span><a href="0303_settings-cards.php" data-account="number">5421590584289359</a></span>
+													<span>Elena Sevankaeva</span>
+													<span>EXP 03/16</span>
+													<span class="text-success">Active</span>
+												</div>
+											</td>
+										</tr>
+										<tr class="card-details">
+											<td></td>
+											<td colspan="6">
+												<div class="pull-left">
+													<img src="img/mast.png" alt="Maestro Card">
+													<span><a href="0303_settings-cards.php" data-account="number">5421590584289359</a></span>
+													<span>Aleksandrs Kiščenko</span>
+													<span>EXP 03/16</span>
+													<span class="text-success">Active</span>
+												</div>
+											</td>
+										</tr>
+
+										<tr class="main-account multi-currency closed-account">
+											<td><input type="checkbox"></td>
+											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333 / Закрыт</a></td>
+											<td>EUR</td>
+											<td class="item-type">Карточный счет</td>
+											<td>5.62</td>
+											<td>0</td>
+											<td>3.83</td>
+											<td>N/A</td>
+										</tr>
+										<tr class="sub-account closed-account">
+											<td><input type="checkbox"></td>
+											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333 / Закрыт</a></td>
+											<td>USD</td>
+											<td class="item-type"></td>
+											<td>5.62</td>
+											<td>0</td>
+											<td>3.83</td>
+											<td>N/A</td>
+										</tr>
+										<tr class="sub-account closed-account">
+											<td><input type="checkbox"></td>
+											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333 / Закрыт</a></td>
+											<td>RUB</td>
+											<td class="item-type"></td>
+											<td>5.62</td>
+											<td>0.00</td>
+											<td>3.83</td>
+											<td>N/A</td>
+										</tr>
+										<tr class="card-details closed-account">
+											<td></td>
+											<td colspan="7">
+												<div class="pull-left">
+													<img src="img/mast.png" alt="Visa">
+													<span><a href="0303_settings-cards.php">5421590584289359</a></span>
+													<span>Elena Sevankaeva</span>
+													<span>EXP 03/16</span>
+													<span>Active</span>
+												</div>
+											</td>
+										</tr>
+										<tr class="card-details closed-account">
+											<td></td>
+											<td colspan="6">
+												<div class="pull-left">
+													<img src="img/mast.png" alt="Visa">
+													<span><a href="0303_settings-cards.php">5421590584289359</a></span>
+													<span>Aleksandrs Kiščenko</span>
+													<span>EXP 03/16</span>
+													<span>Active</span>
+												</div>
+											</td>
+										</tr>
+
+										<tr class="multi-currency">
+											<td><input type="checkbox"></td>
+											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607335</a></td>
+											<td>EUR</td>
+											<td class="item-type">Карточный счет</td>
+											<td>5.62</td>
+											<td>0</td>
+											<td>3.83</td>
+											<td>N/A</td>
+										</tr>
+										<tr class="sub-account">
+											<td><input type="checkbox"></td>
+											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333</a></td>
+											<td>USD</td>
+											<td class="item-type"></td>
+											<td>5.62</td>
+											<td>0</td>
+											<td>3.83</td>
+											<td>N/A</td>
+										</tr>
+										<tr class="sub-account">
+											<td><input type="checkbox"></td>
+											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333</a></td>
+											<td>RUB</td>
+											<td class="item-type"></td>
+											<td>5.62</td>
+											<td>0.00</td>
+											<td>3.83</td>
+											<td>N/A</td>
+										</tr>
+										<tr class="card-details">
+											<td></td>
+											<td colspan="7">
+												<div class="pull-left">
+													<img src="img/maest.png" alt="Visa">
+													<span><a href="0303_settings-cards.php">5421590584289359</a></span>
+													<span>Irina Kļiņičeva</span>
+													<span>EXP 03/16</span>
+													<span class="text-danger">Blocked</span>
+												</div>
+											</td>
+										</tr>
+										<tr class="main-account multi-currency">
+											<td><input type="checkbox"></td>
+											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607335</a></td>
+											<td>EUR</td>
+											<td class="item-type">Карточный счет</td>
+											<td>5.62</td>
+											<td>0.00</td>
+											<td>3.83</td>
+											<td>N/A</td>
+										</tr>
+										<tr class="sub-account">
+											<td><input type="checkbox"></td>
+											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333</a></td>
+											<td>GBP</td>
+											<td class="item-type"></td>
+											<td>5.62</td>
+											<td>0.00</td>
+											<td>3.83</td>
+											<td>N/A</td>
+										</tr>
+										<tr class="sub-account">
+											<td><input type="checkbox"></td>
+											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333</a></td>
+											<td>USD</td>
+											<td class="item-type"></td>
+											<td>5.62</td>
+											<td>0.00</td>
+											<td>3.83</td>
+											<td>N/A</td>
+										</tr>
+										<tr class="card-details">
+											<td></td>
+											<td colspan="7">
+												<div class="pull-left">
+													<span class="text-danger">No card has been issued</span>
+												</div>
+											</td>
+										</tr>
+										<tr class="main-account multi-currency">
+											<td><input type="checkbox"></td>
+											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607335</a></td>
+											<td>EUR</td>
+											<td class="item-type">Карточный счет</td>
+											<td>5.62</td>
+											<td>0.00</td>
+											<td>3.83</td>
+											<td>N/A</td>
+										</tr>
+										<tr class="sub-account">
+											<td><input type="checkbox"></td>
+											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333</a></td>
+											 <td>EUR</td>
+											<td class="item-type"></td>
+											<td>5.62</td>
+											<td>0.00</td>
+											<td>3.83</td>
+											<td>N/A</td>
+										</tr>
+										<tr class="sub-account">
+											<td><input type="checkbox"></td>
+											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333</a></td>
+											 <td>EUR</td>
+											<td class="item-type"></td>
+											<td>5.62</td>
+											<td>0.00</td>
+											<td>3.83</td>
+											<td>N/A</td>
+										</tr>
+										<tr class="card-details">
+											<td></td>
+											<td colspan="7">
+												<div class="pull-left">
+													<img src="img/mast.png" alt="Visa">
+													<span><a href="0303_settings-cards.php">5421590584289359</a></span>
+													<span>Vladimirs Šatunovs</span>
+													<span>EXP 03/15</span>
+													<span class="text-danger">Closed</span>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+
+								<table class="table table-hover table-condensed">
+									<thead class="theader">
+										<tr>
+											<td colspan="4"><h4 class="table-title">Счета финансовых инструментов 18/05/2015</h4></td>
+										</tr>
+										<tr>
+											<th><input type="checkbox"></th>
+											<th class="item-number">Счет</th>
+											<th>Валюта</th>
+											<th>Текущий остаток</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="main-account">
+											<td><input type="checkbox"></td>
+											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333</a></td>
+											<td>0.00</td>
+											<td>EUR</td>
+										</tr>
+										<tr class="sub-account">
+											<td><input type="checkbox"></td>
+											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333</a></td>
+											<td>0.00</td>
+											<td>USD</td>
+										</tr>
+										<tr class="main-account">
+											<td><input type="checkbox"></td>
+											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333</a></td>
+											<td>0.00</td>
+											<td>USD</td>
+										</tr>
+										<tr class="sub-account">
+											<td><input type="checkbox"></td>
+											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333</a></td>
+											<td>0.00</td>
+											<td>RUB</td>
+										</tr>
+									</tbody>
+								</table> 
+							</div>
+							<div class="table-responsive">
+								<h3>Василий Пупкин</h3>
+								<table class="table table-hover table-condensed">
+									<thead class="theader">
+										<tr>
+											<td colspan="8"><h4 class="table-title">Ссудные счета</h4></td>
+										</tr>
+										<tr>
+											<th><input type="checkbox"></th>
+											<th>Счет</th>
+											<th class="cell-amount">Валюта</th>
+											<th>Тип ссуды</th>
+											<th class="cell-amount">Неиспользованный остаток</th>
+											<th class="cell-amount">Остаток задолженности</th>
+											<th class="cell-amount">Начисленные проценты</th>
+											<th class="cell-amount">Кредитный лимит</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="main-account">
+											<td><input type="checkbox"></td>
+											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333</a>	
+												<div class="credit-details"><a href="0103_credit-details.php#all">Детали кредита</a></div>
+												<div class="credit-details"><a href="0103_credit-details.php#new">График платежей</a></div>
+											</td>
+											<td>EUR</td>
+											<td class="item-type">Факторинг</td>
+											<td>52714.36</td>
+											<td>47258.64</td>
+											<td>153.96</td>
+											<td>100000.00</td>							
+										</tr>
+										<tr class="main-account">
+											<td><input type="checkbox"></td>
+											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333</a>	
+												<div class="credit-details"><a href="0103_credit-details.php#all">Детали кредита</a></div>
+												<div class="credit-details"><a href="0103_credit-details.php#new">График платежей</a></div>
+											</td>
+											<td>EUR</td>
+											<td class="item-type">Кредит</td>
+											<td>52714.36</td>
+											<td>47258.64</td>
+											<td>153.96</td>
+											<td>100000.00</td>
+										</tr>
+									</tbody>
+								</table>
+
+								<table class="table table-hover table-condensed">
+									<thead class="theader">
+										<tr>
+											<td colspan="9"><h4 class="table-title">Депозитные счета</h4></td>
+										</tr>
+										<tr>
+											<th><input type="checkbox"></th>
+											<th>Счет / Название</th>
+											<th>Валюта</th>
+											<th>Тип вложений</th>
+											<th>Период</th>
+											<th class="cell-amount">Ставка</th>
+											<th class="cell-amount">Сумма вложения</th>
+											<th class="cell-amount">Накопленные проценты</th>
+											<th class="cell-amount">Финальная сумма</th>
+										</tr>
+									</thead>
+								<tbody>
+									<tr	class="main-account">
+										<td><input type="checkbox"></td>
+										<td class="item-number"><a href="0101_statement.php"><span class="account-name">Зарплатный счет.</span>LV87LAPB0000067607333</a></td>
+										<td>EUR</td>
+										<td class="item-type">Выплата процентов раз в месяц</td>
+										<td>22/09/2009 - 21/09/2015</td>
+										<td>18.00%</td>
+										<td>1234561.70</td>
+										<td>0.00</td>
+										<td>2146259.83</td>
+									</tr>
+									<tr class="main-account">
+										<td><input type="checkbox"></td>
+										<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333</a></td>
+										<td>EUR</td>
+										<td class="item-type">Выплата процентов раз в месяц</td>
+										<td>22/09/2009 - 21/09/2015</td>
+										<td>18.00%</td>
+										<td>1234561.70</td>
+										<td>0.00</td>
+										<td>2146259.83</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+					</div>	<!-- row -->
+				</main>
+			<footer class="ib-footer small">
+				<div class="row">
+					<div class="col-sm-4 col-xs-12">
+						<span class="general-info">&#169; 2008 - 2015</span>
+						<span class="general-info">AS LATVIJAS PASTA BANKA</span>
+					</div>
+					<div class="col-sm-4 col-xs-12 text-center">
+						<span class="general-info">Brīvības iela 54, Rīga, LV-1011</span>
+						<span class="contact-info"><span class="glyphicon glyphicon-envelope"></span><a href="mailto:info@lpb.lv" target="_top">info@lpb.lv</a></span>
+						<span class="contact-info"><span class="glyphicon glyphicon-earphone"></span><a href="tel:+37167772999">(+371) 6 777 2 999</a></span>
+						<span class="contact-info"><span class="glyphicon glyphicon-home"></span><a href="http://www.lpb.lv">www.lpb.lv</a></span>
+					</div>
+					<div class="col-sm-4 col-xs-12 text-right">
+						<span class="general-info">BIC/SWIFT kods: LAPBLV2X</span>
+						<span class="general-info">Reģistrācijas Nr.: 50103189561 </span>
+					</div>
+				</div>
+			</footer>
+			<a href="#" class="scrollup hidden-xs"><span class="glyphicon glyphicon-arrow-up"></span></a>
+		</div> <!-- main-wrapper -->
+	</div>
+	<script data-main="js/main" src="js/vendor/require-2.1.13.min.js"></script>
+	</body>
+</html>

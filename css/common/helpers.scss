@@ -1,0 +1,49 @@
+//
+// ---------------- Clear floats inside this element ---------------- 
+//
+.clearfix {
+	zoom: 1;
+	
+	&:before,
+	&:after {
+		content: '.';
+		display: block;
+		overflow: hidden;
+		visibility: hidden;
+		font-size: 0;
+		line-height: 0;
+		width: 0;
+		height: 0;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+//
+// ---------------- Clear floats ---------------- 
+//
+.clear {
+	clear: both !important;
+	display: block !important;
+	overflow: hidden !important;
+	visibility: hidden !important;
+	width: 100% !important;
+	height: 0 !important;
+	float: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+//
+// ---------------- Invisible element ---------------- 
+//
+.hidden,
+.supra-hidden {
+	display: none !important;
+}
+.invisible {
+	position: absolute !important;
+	left: -9000px !important;
+	width: 1px;
+}

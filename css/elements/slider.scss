@@ -1,0 +1,39 @@
+.banner {
+	position: relative;
+	overflow: hidden;
+}
+.banner li {
+	list-style: none;
+}
+
+.banner ul {
+	width: 500% !important;
+}
+
+.banner ul li { 
+	float: left; 
+	display: inline-block;
+	height: 350px !important;
+	width: 700px !important;
+	overflow: hidden;
+}
+
+// CMS Gallery manager
+.su-gallerymanager-wrapper {
+	.banner {
+		// Hide decoration
+		&:before {
+			display: none;
+		}
+		
+		// Position items one under another
+		ul {
+			width: auto !important;
+			
+			// New item button should take the size it needs
+			li.supra-gallerymanager-new {
+				height: auto !important;
+			}
+		}
+	}
+}

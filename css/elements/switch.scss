@@ -1,0 +1,73 @@
+.switch {
+	margin-bottom: 40px;
+	position: relative;
+	border-bottom: 1px solid #446e85;
+	display: inline-block;
+	
+	&.currency .pin {
+		background-image: url('../assets/img/icons/switcher_pin-calculator.png');
+	}
+	
+	li {
+		display: inline-block;
+		margin-left: 50px;
+		font-size: 12px;
+		&:first-child {
+			margin-left: 0;
+		}
+		a {
+			font-weight: 300;
+			color: #446e85;
+			display: inline-block;
+			padding-bottom: 5px;
+			cursor: pointer;
+			text-shadow: 0 0px 0px rgba(0, 0, 0, 0.9);
+			&.active {
+				color: #FFB300;
+				/* font-weight: 700; */
+				cursor: default;
+			}
+		}
+	}
+	.pin {
+		background-image: url('../assets/img/icons/switcher_pin-2.png');
+		background-repeat: no-repeat;
+		bottom: -15px;
+		display: inline-block;
+		position: absolute;
+		width: 20px;
+		height: 15px;
+	}
+}
+
+/**
+ * Big switch in cost rates
+ */
+.left {
+	.switch {
+		a.active {
+			position: relative;
+
+			.pin {
+				left: 0;
+				right: 0;
+				margin: auto;
+			}
+		}
+	}
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+	
+	.switch.currency .pin {
+		background-image: url('/assets/img/icons/switcher_pin-calculator-@2x.jpg');
+		bottom: -14px;
+		background-size: contain;
+	}
+
+	.switch .pin {
+		background-image: url('/assets/img/icons/switcher_pin-2-@2x.jpg');
+		bottom: -14px;
+		background-size: contain;
+	}
+}

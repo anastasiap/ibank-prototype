@@ -1,0 +1,168 @@
+.banners {
+	margin-top: 10px;
+	.tiles-wrapper {
+		height: 357px;
+		overflow: hidden;
+	}
+	figure {
+		position: relative;
+		
+		&.corporate {
+			display: none;
+		}
+		
+		.inner {
+			height:323px;
+			float: left;
+			display: inline-block;
+			width: 460px;
+			vertical-align: top;
+			margin-left: 20px;
+			position: relative;
+			overflow: hidden;
+			box-shadow: 0 1px 3px 0px rgba(0,0,0,.7);
+	
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+			
+		.inner-text {
+			top: 40px;
+			margin-left: 30px;
+			width: 50%;
+			position: absolute;
+			
+			h2 {
+				color: #1f8fd0;
+				font-size: 20px;
+			}
+			
+			.btn, p {
+				margin-top: 20px;
+			}
+
+			.btn {
+				position: relative;
+				z-index: 3;
+			}
+		}
+	}
+	.small {
+		.inner {
+			float: right;
+			width: 300px;
+			height: 137px;
+			position: relative;
+			overflow: hidden;
+			.inner-text {
+				text-align: left;
+				width: auto;
+				top: 20px;
+				margin-right: 20px;
+				position: absolute;
+			}
+		}
+	}
+	.bottom p {
+		width: 600px;
+		margin: 20px 0 30px 0;
+	}
+	
+	.small + p {
+		margin-top: 0;
+	}
+	
+	// Correct rendering in CMS
+	.bottom > .yui3-content-inline {
+		width: 600px;
+		display: inline-block;
+		vertical-align: top;
+		p {
+			margin: 20px 0 30px 0;
+		}
+	}
+	
+	.yui3-content-inline p:first-child {
+		margin-top: 0;
+	}
+	
+		// Docs description
+		.person .yui3-content-inline,
+		.corporate .yui3-content-inline {
+			text-decoration: underline;
+			display: inline-block;
+			vertical-align: top;
+		}
+		
+	
+	
+	.docs {
+		margin: 30px 0 0 0;
+		display: inline-block;
+		h3 {
+			padding-right: 20px;
+		}
+		
+		ul {
+			li {
+				margin: 0;
+				&:first-child {
+					margin: 20px 0; 
+				}
+				a {
+					color: #2093d2;
+					text-decoration: underline;
+					font-size: 13px;
+					cursor: pointer;
+					
+					&:hover {
+						text-decoration: underline;
+					}
+					
+					&:before {
+						content: ' ';
+						width: 20px;
+						height: 20px;
+						background-repeat: no-repeat;
+						display: inline-block;
+						margin-right: 12px;
+						vertical-align: text-top;
+					}
+					
+					&.person:before {
+						background-image: url('../assets/img/icons/silhouette-icons.jpg');
+					}
+					
+					&.corporate:before {
+						background-image: url('../assets/img/icons/corporate-icon.jpg');
+					}
+				}
+			}
+		}
+	}
+}
+
+/**
+ * 	New client application form
+ */
+form[name="new-client"] {
+	.checkbox {
+		.input-checkbox-fake {
+			top:auto;
+			left: auto;
+			margin-right: 15px;
+			vertical-align: middle;
+			cursor: pointer;
+		}
+		
+		label {
+			display: inline-block;
+			width: 80%;			
+			cursor: pointer;
+		}	
+	}
+	.country span.error {
+		left: 112px;
+	}
+}
