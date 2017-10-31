@@ -2,17 +2,17 @@ define([
 	'jquery'
 ], function ($) {
 
-	var obj =  {
+	var plugin =  {
 		multiselect: '[data-target="multi-select"]',
 		statementAccountsList: $('ul.statement-accounts'),
 
 		init: function() {
-			obj.bindEvents(obj.getValues());
+			plugin.bindEvents(plugin.getValues());
 		},
 
 		getValues: function(el) {
 			var values = [],
-				element = el ? el : obj.multiselect;
+				element = el ? el : plugin.multiselect;
 
 			if (element.type == 'checkbox') {
 				var selected = $('.account-checkbox:checked');
@@ -28,49 +28,48 @@ define([
 
 			return values;
 		},
+		
 		bindEvents: function(value) {
-			$('body').on('click', '[type="checkbox"]', {val: value}, obj.doMagic);
-			$('body').on('select2:select select2:unselect', {val: value}, obj.doMagic);
+			$('body').on('click', '[type="checkbox"]', {val: value}, plugin.activateAccount);
+			$('body').on('select2:select select2:unselect', {val: value}, plugin.activateAccount);
 			$('document').ready(function(){
-				if (obj.statementAccountsList.length != 0) { obj.setAccounts() }
+				if (plugin.statementAccountsList.length != 0) { plugin.setAccounts() }
 			});
 		},
 
 		setAccounts: function() {
-			var accLinks = obj.statementAccountsList.find('li a');
-
-			var accounts = [];
+			var accLinks = plugin.statementAccountsList.find('li a'),
+				accounts = [];
 
 			accLinks.map(function(){
 				accounts.push($(this).text());
 			});
 
-			$(obj.multiselect).val(accounts);
-			$(obj.multiselect).trigger('changeSelection');
-
+			$(plugin.multiselect).val(accounts);
+			$(plugin.multiselect).trigger('changeSelection');
 		},
 
-		doMagic: function(e) {
+		activateAccount: function(e) {
 			var clicked = e.target,
 				prevValue = e.data.val,
-				newValue = obj.getValues(clicked);
+				newValue = plugin.getValues(clicked);
 
 			var	latestValue = $(clicked).val() ? $(clicked).val() : [],
 				attrStatus = prevValue.length < newValue.length ? true : false;
 
 			if (clicked.type === 'select-multiple') {
 				if (e.type == 'select2:select') {
-					latestValue = obj.compareValues(newValue, prevValue);
+					latestValue = plugin.compareValues(newValue, prevValue);
 					attrStatus = true;
 				} else {
-					latestValue = obj.compareValues(prevValue, newValue);
+					latestValue = plugin.compareValues(prevValue, newValue);
 					attrStatus = false;
 				}
 			}
 
 			e.data.val = newValue;
 
-			var el2select = obj.getElementsToChange(clicked, latestValue);
+			var el2select = plugin.getElementsToChange(clicked, latestValue);
 
 			if (el2select) {
 				if (el2select.type == 'checkbox') {
@@ -82,7 +81,7 @@ define([
 				}
 			}
 
-			obj.disableCheckboxes(newValue);
+			plugin.disableCheckboxes(newValue);
 		},
 
 		disableCheckboxes: function(checkboxValue) {
@@ -125,7 +124,7 @@ define([
 	};
 
 	return {
-		accountSelection: obj.init
+		accountSelection: plugin.init
 	}
 });
 

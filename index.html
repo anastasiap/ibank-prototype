@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width initial-scale=1 shrink-to-fit=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <meta name="viewport" content="width=device-width initial-scale=1 shrink-to-fit=yes"> -->
 		<title>iBank</title>
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/jquery-ui.min.css" rel="stylesheet">
@@ -26,9 +27,9 @@
 						<li><a href="#">ENG</a></li>
 					</ul>
 					<ul>
-						<li><a href="0305_settings-profile.php" class="navbar-link"><span class="glyphicon glyphicon-user"></span>Vasilij Pupkin. CIF A75000</a></li>
-						<li><a href="0301_inbox.php" class="navbar-link"><span class="glyphicon glyphicon-envelope"></span>4 новых сообщения</a></li>
-						<li><a href="0102_mobile-advanced-search.php" class="navbar-link"><span class="glyphicon glyphicon-search"></span>Поиск</a></li>
+						<li><a href="#" class="navbar-link"><span class="glyphicon glyphicon-user"></span>Vasilij Pupkin. CIF A75000</a></li>
+						<li><a href="#" class="navbar-link"><span class="glyphicon glyphicon-envelope"></span>4 новых сообщения</a></li>
+						<li><a href="#" class="navbar-link"><span class="glyphicon glyphicon-search"></span>Поиск</a></li>
 					</ul>
 				</div>
 				<ul class="mobile-main-nav">
@@ -36,7 +37,7 @@
 						<form class="navbar-form">
 							<select class="form-control clients-select">
 								<option>Все клиенты</option>
-								<option>DUBULTAIS IERAKSTS SABIEDRĪBA AR IEROBEŽOTU ATBILDĪBU</option>
+								<option>SABIEDRĪBA AR IEROBEŽOTU ATBILDĪBU</option>
 								<option>Vasilij Pupkin</option>
 							</select>
 						</form>
@@ -103,7 +104,7 @@
 				</ul>
 				<div class="logout">
 					<ul>
-						<li><a href="index.php">Выйти<span class="glyphicon glyphicon-log-out"></span></a></li>	
+						<li><a href="#">Выйти<span class="glyphicon glyphicon-log-out"></span></a></li>	
 					</ul>
 				</div>
 			</div>
@@ -122,7 +123,7 @@
 						<span class="mail">E-pasts: info@lpb.lv</span>
 					</address>
 					<div class="col-sm-6 col-sm-12">
-						<div class="logo"><a href="0100_accounts.php"><img src="img/logo_vi.png"></a></div>
+						<div class="logo"><a href=""><img src="img/logo_vi.png"></a></div>
 					</div>
 					<div class="col-sm-6 col-sm-12">
 						<ul class="lang hidden-xs">
@@ -132,10 +133,9 @@
 						</ul>
 						
 						<ul class="lang user-info hidden-xs">
-							<li><a href="0301_inbox.php" class="text-danger"><span class="glyphicon glyphicon-envelope"></span>4 новых сообщения</a></li>
-							<!-- <li><a href="0301_inbox.php"><span class="glyphicon glyphicon-envelope"></span>Банковские сообщения</a></li> -->
-							<li><a href="0305_settings-profile.php">Vasilij Pupkin. CIF A75000</a></li>
-							<li><a href="index.php">Выйти<span class="glyphicon glyphicon-log-out"></span></a></li>
+							<li><a href="#" class="text-danger"><span class="glyphicon glyphicon-envelope"></span>4 новых сообщения</a></li>
+							<li><a href="#">Vasilij Pupkin. CIF A75000</a></li>
+							<li><a href="#">Выйти<span class="glyphicon glyphicon-log-out"></span></a></li>
 						</ul>
 						
 					</div>
@@ -158,15 +158,15 @@
 									<form class="navbar-form navbar-right">
 										<select class="form-control clients-select" value="Все клиенты" data-native-menu="false">
 											<option>Все клиенты</option>
-											<option>DUBULTAIS IERAKSTS SABIEDRĪBA AR IEROBEŽOTU ATBILDĪBU</option>
+											<option>SABIEDRĪBA AR IEROBEŽOTU ATBILDĪBU</option>
 											<option>Vasilij Pupkin</option>
 										</select>
 									</form>
 								</div>
 								<div class="col-sm-7">
 									<ul>
-										<li class="accounts active"><a href="0100_accounts.php"><span class="glyphicon glyphicon-th-large"></span>Состояние счетов</a></li>
-										<li class="payments"><a href="0200_payments.php"><span class="glyphicon glyphicon-file"></span>Банковские операции</a></li>
+										<li class="accounts active"><a href="#"><span class="glyphicon glyphicon-th-large"></span>Состояние счетов</a></li>
+										<li class="payments"><a href="#"><span class="glyphicon glyphicon-file"></span>Банковские операции</a></li>
 									</ul>
 								</div>
 								<div class="col-sm-2">
@@ -174,15 +174,15 @@
 										<li class="profile dropdown">
 											<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-folder-close"></span>Профиль <span class="caret"></span></a>
 											<ul class="dropdown-menu" role="menu">
-												<li><a href="0301_inbox.php">Банковские сообщения<span class="badge">4</span></a></li>
+												<li><a href="#">Банковские сообщения<span class="badge">4</span></a></li>
 												<li class="divider"></li>
-												<li><a href="0302_settings-view.php">Настройки показа счетов</a></li>
-												<li><a href="0303_settings-cards.php">Настройки платежных карт</a></li>
-												<li><a href="0304_settings-import.php">Формат платежа импорта</a></li>
+												<li><a href="#">Настройки показа счетов</a></li>
+												<li><a href="#">Настройки платежных карт</a></li>
+												<li><a href="#">Формат платежа импорта</a></li>
 												<li class="divider"></li>
-												<li><a href="0305_settings-profile.php">Настройки профиля</a></li>
-												<li><a href="0306_settings-password.php">Изменение пароля</a></li>
-												<li><a href="0307_settings-logbook.php">История заходов в систему</a></li>
+												<li><a href="#">Настройки профиля</a></li>
+												<li><a href="#">Изменение пароля</a></li>
+												<li><a href="#">История заходов в систему</a></li>
 											</ul>
 										</li>
 									</ul>
@@ -203,7 +203,7 @@
 										<select class="form-control" multiple="multiple" data-target="multi-select" style="width: 100%">
 						    				<option></option>
 						    				<option value="LV79LAPB0000006065051"><span class="item-number">LV79LAPB0000006065051</span> - 28987123.34 Eur</option>
-						    				<option value="LV87LAPB0000067607333"><span class="item-number">LV87LAPB0000067607333</span> - 8987.34 Eur</option>
+						    				<option value="LV87LAPB045670067607333"><span class="item-number">LV87LAPB045670067607333</span> - 8987.34 Eur</option>
 						    				<option value="LV87LAPB0000067607334"><span class="item-number">LV87LAPB0000067607334</span> - 8987.34 Eur</option>
 						    				<option value="LV87LAPB0000067607335"><span class="item-number">LV87LAPB0000067607335</span> - 8987.34 Eur</option>
 						    				<option value="LV87LAPB0000067607336"><span class="item-number">LV87LAPB0000067607336</span> - 8987.34 Eur</option>
@@ -246,7 +246,7 @@
 
 					<div class="col-sm-9 col-xs-12">
 						<div class="content-wrapper accounts-wrapper">
-							<h3>A09344</h3>
+							<h3>A5936744</h3>
 							<div class="table-responsive">
 								<table class="table table-hover table-condensed">
 									<thead class="theader">
@@ -268,18 +268,18 @@
 										<tr class="main-account">
 											<td><input type="checkbox" class="account-checkbox" value="LV79LAPB0000006065051" /></td>
 											<td class="item-number">
-												<a href="0101_statement.php" data-account="number">LV79LAPB0000006065051 (main account 1)</a>
+												<a href="#" data-account="number">LV79LAPB0000006065051 (main account 1)</a>
 											</td>
 											<td>EUR</td>
 											<td class="item-type">Рассчетный счет</td>
 											<td>3.83</td>
-											<td><a href="0104_reserved.php">11.09</a></td>
+											<td><a href="#">11.09</a></td>
 											<td>5.62</td>
 											<td>N/A</td>
 										</tr>
 										<tr class="main-account multi-currency">
-											<td><input type="checkbox" class="account-checkbox" value="LV87LAPB0000067607333" /></td>
-											<td class="item-number"><a href="0101_statement.php" data-account="number">LV87LAPB0000067607333</a></td>
+											<td><input type="checkbox" class="account-checkbox" value="LV87LAPB045670067607333" /></td>
+											<td class="item-number"><a href="#" data-account="number">LV87LAPB045670067607333</a></td>
 											<td>EUR</td>
 											<td class="item-type">Рассчетный счет</td>
 											<td>3.83</td>
@@ -289,7 +289,7 @@
 										</tr>
 										<tr class="sub-account">
 											<td><input type="checkbox" class="account-checkbox" value="LV87LAPB0000067607334"></td>
-											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607334</a></td>
+											<td class="item-number"><a href="#">LV87LAPB0000067607334</a></td>
 											<td>USD</td>
 											<td class="item-type"></td>
 											<td>100024.83</td>
@@ -309,7 +309,7 @@
 										</tr>
 										<tr class="main-account multi-currency">
 											<td><input type="checkbox" class="account-checkbox" ></td>
-											<td class="item-number"><a href="0101_statement.php" data-account="number">LV87LAPB0000067607333</a></td>
+											<td class="item-number"><a href="#" data-account="number">LV87LAPB045670067607333</a></td>
 											<td>EUR</td>
 											<td class="item-type">Карточный счет</td>
 											<td>5.62</td>
@@ -319,7 +319,7 @@
 										</tr>
 										<tr class="sub-account">
 											<td><input type="checkbox" class="account-checkbox" ></td>
-											<td class="item-number"><a href="0101_statement.php" data-account="number">LV87LAPB0000067607333</a></td>
+											<td class="item-number"><a href="#" data-account="number">LV87LAPB045670067607333</a></td>
 											<td>USD</td>
 											<td class="item-type"></td>
 											<td>5.62</td>
@@ -329,7 +329,7 @@
 										</tr>
 										<tr class="sub-account">
 											<td><input type="checkbox" class="account-checkbox" ></td>
-											<td class="item-number"><a href="0101_statement.php" data-account="number">LV87LAPB0000067607333</a></td>
+											<td class="item-number"><a href="#" data-account="number">LV87LAPB045670067607333</a></td>
 											<td>RUB</td>
 											<td class="item-type"></td>
 											<td>5.62</td>
@@ -342,8 +342,8 @@
 											<td colspan="7">
 												<div class="pull-left">
 													<img src="img/visa.png" alt="Visa" title="Card">
-													<span><a href="0303_settings-cards.php" data-account="number">5421590584289359</a></span>
-													<span>Elena Sevankaeva</span>
+													<span><a href="#" data-account="number">5421590584289359</a></span>
+													<span>Elena Ivanova</span>
 													<span>EXP 03/16</span>
 													<span class="text-success">Active</span>
 												</div>
@@ -354,8 +354,8 @@
 											<td colspan="6">
 												<div class="pull-left">
 													<img src="img/mast.png" alt="Maestro Card">
-													<span><a href="0303_settings-cards.php" data-account="number">5421590584289359</a></span>
-													<span>Aleksandrs Kiščenko</span>
+													<span><a href="#" data-account="number">5421590584289359</a></span>
+													<span>Aleksandrs Ptocin</span>
 													<span>EXP 03/16</span>
 													<span class="text-success">Active</span>
 												</div>
@@ -364,7 +364,7 @@
 
 										<tr class="main-account multi-currency closed-account">
 											<td><input type="checkbox"></td>
-											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333 / Закрыт</a></td>
+											<td class="item-number"><a href="#">LV87LAPB045670067607333 / Закрыт</a></td>
 											<td>EUR</td>
 											<td class="item-type">Карточный счет</td>
 											<td>5.62</td>
@@ -374,7 +374,7 @@
 										</tr>
 										<tr class="sub-account closed-account">
 											<td><input type="checkbox"></td>
-											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333 / Закрыт</a></td>
+											<td class="item-number"><a href="#">LV87LAPB045670067607333 / Закрыт</a></td>
 											<td>USD</td>
 											<td class="item-type"></td>
 											<td>5.62</td>
@@ -384,7 +384,7 @@
 										</tr>
 										<tr class="sub-account closed-account">
 											<td><input type="checkbox"></td>
-											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333 / Закрыт</a></td>
+											<td class="item-number"><a href="#">LV87LAPB045670067607333 / Закрыт</a></td>
 											<td>RUB</td>
 											<td class="item-type"></td>
 											<td>5.62</td>
@@ -397,8 +397,8 @@
 											<td colspan="7">
 												<div class="pull-left">
 													<img src="img/mast.png" alt="Visa">
-													<span><a href="0303_settings-cards.php">5421590584289359</a></span>
-													<span>Elena Sevankaeva</span>
+													<span><a href="#">5421590584289359</a></span>
+													<span>Elena Hromova</span>
 													<span>EXP 03/16</span>
 													<span>Active</span>
 												</div>
@@ -409,8 +409,8 @@
 											<td colspan="6">
 												<div class="pull-left">
 													<img src="img/mast.png" alt="Visa">
-													<span><a href="0303_settings-cards.php">5421590584289359</a></span>
-													<span>Aleksandrs Kiščenko</span>
+													<span><a href="#">5421590584289359</a></span>
+													<span>Aleksandrs Frolov</span>
 													<span>EXP 03/16</span>
 													<span>Active</span>
 												</div>
@@ -419,7 +419,7 @@
 
 										<tr class="multi-currency">
 											<td><input type="checkbox"></td>
-											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607335</a></td>
+											<td class="item-number"><a href="#">LV87LAPB0000067607335</a></td>
 											<td>EUR</td>
 											<td class="item-type">Карточный счет</td>
 											<td>5.62</td>
@@ -429,7 +429,7 @@
 										</tr>
 										<tr class="sub-account">
 											<td><input type="checkbox"></td>
-											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333</a></td>
+											<td class="item-number"><a href="#">LV87LAPB045670067607333</a></td>
 											<td>USD</td>
 											<td class="item-type"></td>
 											<td>5.62</td>
@@ -439,7 +439,7 @@
 										</tr>
 										<tr class="sub-account">
 											<td><input type="checkbox"></td>
-											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333</a></td>
+											<td class="item-number"><a href="#">LV87LAPB045670067607333</a></td>
 											<td>RUB</td>
 											<td class="item-type"></td>
 											<td>5.62</td>
@@ -452,7 +452,7 @@
 											<td colspan="7">
 												<div class="pull-left">
 													<img src="img/maest.png" alt="Visa">
-													<span><a href="0303_settings-cards.php">5421590584289359</a></span>
+													<span><a href="#">5421590584289359</a></span>
 													<span>Irina Kļiņičeva</span>
 													<span>EXP 03/16</span>
 													<span class="text-danger">Blocked</span>
@@ -461,7 +461,7 @@
 										</tr>
 										<tr class="main-account multi-currency">
 											<td><input type="checkbox"></td>
-											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607335</a></td>
+											<td class="item-number"><a href="#">LV87LAPB0000067607335</a></td>
 											<td>EUR</td>
 											<td class="item-type">Карточный счет</td>
 											<td>5.62</td>
@@ -471,7 +471,7 @@
 										</tr>
 										<tr class="sub-account">
 											<td><input type="checkbox"></td>
-											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333</a></td>
+											<td class="item-number"><a href="#">LV87LAPB045670067607333</a></td>
 											<td>GBP</td>
 											<td class="item-type"></td>
 											<td>5.62</td>
@@ -481,7 +481,7 @@
 										</tr>
 										<tr class="sub-account">
 											<td><input type="checkbox"></td>
-											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333</a></td>
+											<td class="item-number"><a href="#">LV87LAPB045670067607333</a></td>
 											<td>USD</td>
 											<td class="item-type"></td>
 											<td>5.62</td>
@@ -499,7 +499,7 @@
 										</tr>
 										<tr class="main-account multi-currency">
 											<td><input type="checkbox"></td>
-											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607335</a></td>
+											<td class="item-number"><a href="#">LV87LAPB0000067607335</a></td>
 											<td>EUR</td>
 											<td class="item-type">Карточный счет</td>
 											<td>5.62</td>
@@ -509,7 +509,7 @@
 										</tr>
 										<tr class="sub-account">
 											<td><input type="checkbox"></td>
-											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333</a></td>
+											<td class="item-number"><a href="#">LV87LAPB045670067607333</a></td>
 											 <td>EUR</td>
 											<td class="item-type"></td>
 											<td>5.62</td>
@@ -519,7 +519,7 @@
 										</tr>
 										<tr class="sub-account">
 											<td><input type="checkbox"></td>
-											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333</a></td>
+											<td class="item-number"><a href="#">LV87LAPB045670067607333</a></td>
 											 <td>EUR</td>
 											<td class="item-type"></td>
 											<td>5.62</td>
@@ -557,25 +557,25 @@
 									<tbody>
 										<tr class="main-account">
 											<td><input type="checkbox"></td>
-											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333</a></td>
+											<td class="item-number"><a href="#">LV87LAPB045670067607333</a></td>
 											<td>0.00</td>
 											<td>EUR</td>
 										</tr>
 										<tr class="sub-account">
 											<td><input type="checkbox"></td>
-											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333</a></td>
+											<td class="item-number"><a href="#">LV87LAPB045670067607333</a></td>
 											<td>0.00</td>
 											<td>USD</td>
 										</tr>
 										<tr class="main-account">
 											<td><input type="checkbox"></td>
-											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333</a></td>
+											<td class="item-number"><a href="#">LV87LAPB045670067607333</a></td>
 											<td>0.00</td>
 											<td>USD</td>
 										</tr>
 										<tr class="sub-account">
 											<td><input type="checkbox"></td>
-											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333</a></td>
+											<td class="item-number"><a href="#">LV87LAPB045670067607333</a></td>
 											<td>0.00</td>
 											<td>RUB</td>
 										</tr>
@@ -603,7 +603,7 @@
 									<tbody>
 										<tr class="main-account">
 											<td><input type="checkbox"></td>
-											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333</a>	
+											<td class="item-number"><a href="#">LV87LAPB045670067607333</a>	
 												<div class="credit-details"><a href="0103_credit-details.php#all">Детали кредита</a></div>
 												<div class="credit-details"><a href="0103_credit-details.php#new">График платежей</a></div>
 											</td>
@@ -616,7 +616,7 @@
 										</tr>
 										<tr class="main-account">
 											<td><input type="checkbox"></td>
-											<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333</a>	
+											<td class="item-number"><a href="#">LV87LAPB045670067607333</a>	
 												<div class="credit-details"><a href="0103_credit-details.php#all">Детали кредита</a></div>
 												<div class="credit-details"><a href="0103_credit-details.php#new">График платежей</a></div>
 											</td>
@@ -650,7 +650,7 @@
 								<tbody>
 									<tr	class="main-account">
 										<td><input type="checkbox"></td>
-										<td class="item-number"><a href="0101_statement.php"><span class="account-name">Зарплатный счет.</span>LV87LAPB0000067607333</a></td>
+										<td class="item-number"><a href="#"><span class="account-name">Зарплатный счет.</span>LV87LAPB045670067607333</a></td>
 										<td>EUR</td>
 										<td class="item-type">Выплата процентов раз в месяц</td>
 										<td>22/09/2009 - 21/09/2015</td>
@@ -661,7 +661,7 @@
 									</tr>
 									<tr class="main-account">
 										<td><input type="checkbox"></td>
-										<td class="item-number"><a href="0101_statement.php">LV87LAPB0000067607333</a></td>
+										<td class="item-number"><a href="#">LV87LAPB045670067607333</a></td>
 										<td>EUR</td>
 										<td class="item-type">Выплата процентов раз в месяц</td>
 										<td>22/09/2009 - 21/09/2015</td>
@@ -686,8 +686,8 @@
 					</div>
 					<div class="col-sm-4 col-xs-12 text-center">
 						<span class="general-info">Brīvības iela 54, Rīga, LV-1011</span>
-						<span class="contact-info"><span class="glyphicon glyphicon-envelope"></span><a href="mailto:info@lpb.lv" target="_top">info@lpb.lv</a></span>
-						<span class="contact-info"><span class="glyphicon glyphicon-earphone"></span><a href="tel:+37167772999">(+371) 6 777 2 999</a></span>
+						<span class="contact-info"><span class="glyphicon glyphicon-envelope"></span><a href="#" target="_top">info@lpb.lv</a></span>
+						<span class="contact-info"><span class="glyphicon glyphicon-earphone"></span><a href="tel:">(+371) 6 777 2 999</a></span>
 						<span class="contact-info"><span class="glyphicon glyphicon-home"></span><a href="http://www.lpb.lv">www.lpb.lv</a></span>
 					</div>
 					<div class="col-sm-4 col-xs-12 text-right">

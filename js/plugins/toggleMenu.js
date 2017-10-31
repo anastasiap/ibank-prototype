@@ -4,7 +4,6 @@ define(['jquery'], function ($) {
 
 	target.on('touchstart', function(e) {
  	    e.preventDefault();
-		e.stopPropagation();
 
 		wrapper.toggleClass('toggled');
 

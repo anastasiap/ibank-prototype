@@ -1,19 +1,3 @@
-/*
- * In DOM finds elements, which has some functionality attached
- * loads dependencies and initializes module (function) or jQuery plugin on them
- * 
- * If module/plugin is already initialized on the element, it will be ignored for that element
- * on repeated $.app.parse calls.
- * 
- * To remove/destroy modules/plugins for element and all descendants use $.app.cleanup(element)
- * If module has .destroy function, then it will be called.
- * 
- * @example
- *     <input type="checkbox" data-require="components/form/checkbox" data-attach="$.fn.checkbox" />
- *     <input type="checkbox" data-require="modules/something" data-attach="myFunctionName" />
- * 
- * @version 1.0.4
- */
 "use strict";
 
 (function (root, factory) {

@@ -8,9 +8,6 @@ define([
 	var isMobile = $('body').hasClass('mobile') || $('body').hasClass('apple');
 
 	$('.login [type="submit"]').on('keypress', function(e){
-
-		console.log('worked');
-
 		if (e.which == 13) {
 	        e.preventDefault();
 	        $(this).submit();
